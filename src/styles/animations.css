@@ -1,0 +1,81 @@
+/* animations.css */
+/* Base transition for smooth animations */
+body {
+  transition: background-color 0.5s ease;
+  transition-delay: 1s;
+}
+
+/* Character animations */
+.split-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(80px);
+  filter: blur(5px);
+  animation: fadeInUp 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+/* Stagger delays for characters */
+.split-char:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.split-char:nth-child(2) {
+  animation-delay: 0.325s;
+}
+.split-char:nth-child(3) {
+  animation-delay: 0.35s;
+}
+/* Continue this pattern for as many characters as needed */
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Landing info animation */
+.landing-info-h2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUpSimple 1.2s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.8s
+    forwards;
+}
+
+@keyframes fadeInUpSimple {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header elements animation */
+.header,
+.icons-section,
+.nav-fade {
+  opacity: 0;
+  animation: fadeIn 1.2s cubic-bezier(0.55, 0.09, 0.68, 0.53) 0.1s forwards;
+}
+
+/* Looping text animation */
+.loop-text-char {
+  animation: textLoop 4.8s infinite;
+}
+
+@keyframes textLoop {
+  0%,
+  20% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  30%,
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  60%,
+  100% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+}
