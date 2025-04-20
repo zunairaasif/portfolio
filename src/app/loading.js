@@ -2,7 +2,7 @@
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from "react";
 
-import "@styles/Loading.css";
+import "@styles/loading.css";
 import { useLoading } from "@context/LoadingProvider";
 
 const Loading = ({ percent }) => {
@@ -46,7 +46,10 @@ const Loading = ({ percent }) => {
   return (
     <>
       <div className="loading-header">
-        <span className="loader-title">Zunaira Asif</span>
+        <span className="h-fit font-display font-bold text-2xl">
+          Zunaira Asif
+        </span>
+
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
             <div className="loaderGame-in">
@@ -58,13 +61,12 @@ const Loading = ({ percent }) => {
           </div>
         </div>
       </div>
+
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span>A Creative Developer</span>
-            <span>Turning Designs Into Digital Reality</span>
-            <span>A Creative Developer</span>
-            <span>Turning Designs Into Digital Reality</span>
+            <span>From Designs To Digital Reality</span>
+            <span>From Designs To Digital Reality</span>
           </Marquee>
         </div>
         <div

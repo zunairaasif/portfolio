@@ -1,8 +1,8 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 
-import Loading from "@/app/loading";
-import { setProgress } from "@/app/loading";
+import Loading from "@app/loading";
+import { setProgress } from "@app/loading";
 
 export const LoadingContext = createContext(null);
 
@@ -36,7 +36,7 @@ export const LoadingProvider = ({ children }) => {
   return (
     <LoadingContext.Provider value={value}>
       {isLoading && <Loading percent={loadingPercent} />}
-      <main className="main-body">{children}</main>
+      {children}
     </LoadingContext.Provider>
   );
 };

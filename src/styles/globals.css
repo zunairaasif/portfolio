@@ -1,8 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Lobster Two", cursive;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
 :root {
   font-family: "Geist", sans-serif;
-
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
@@ -10,7 +15,6 @@
   color-scheme: light dark;
   color: #eae5ec;
   background-color: var(--backgroundColor);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

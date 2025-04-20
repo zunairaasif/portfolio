@@ -1,4 +1,4 @@
-import "@styles/style.css";
+import "@styles/hover.css";
 
 const HoverLinks = ({ text, cursor }) => {
   return (
