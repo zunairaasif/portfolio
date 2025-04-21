@@ -1,12 +1,7 @@
 "use client";
-import {
-  FaGithub,
-  FaXTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa6";
 import { useEffect } from "react";
 import { TbNotes } from "react-icons/tb";
+import { FaGithub, FaUpwork, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 
 import "@styles/socialLinks.css";
 import HoverLinks from "./HoverLinks";
@@ -58,36 +53,54 @@ const SocialLinks = () => {
     });
   }, []);
 
+  const handleDownload = () => {
+    const url = "/zunaira-asif_resume.pdf";
+    const fileName = url.split("/").pop();
+    const link = document.createElement("a");
+    link.href = url;
+    link.setAttribute("download", fileName);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  };
+
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com" target="_blank">
+          <a href="https://github.com/zunairaasif" target="_blank">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a href="https://www.linkedin.com" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/zunaira-a-46b072216/"
+            target="_blank"
+          >
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href="https://x.com" target="_blank">
-            <FaXTwitter />
+          <a
+            href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
+            target="_blank"
+          >
+            <FaUpwork />
           </a>
         </span>
         <span>
-          <a href="https://www.instagram.com" target="_blank">
-            <FaInstagram />
+          <a href="https://wa.me/+923034774200" target="_blank">
+            <FaWhatsapp />
           </a>
         </span>
       </div>
-      <a className="resume-button" href="#">
+
+      <button className="resume-button" onClick={handleDownload}>
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
         </span>
-      </a>
+      </button>
     </div>
   );
 };
