@@ -14,7 +14,7 @@ const Page = () => {
         <div id="smooth-content">
           <div className="container-main">
             <Home />
-            {/* <About /> */}
+            <About />
           </div>
         </div>
       </div>

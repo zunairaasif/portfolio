@@ -14,9 +14,9 @@ const TypingText = () => {
         4000,
         "React.js Developer",
         4000,
-        "Next.js Developer",
-        4000,
         "Shopify Developer",
+        4000,
+        "Next.js Developer",
         4000,
       ]}
     />
