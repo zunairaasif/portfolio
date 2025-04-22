@@ -9,21 +9,21 @@ export default function Home() {
           <Spline scene="https://prod.spline.design/2FgeGj4wEkC9t4eR/scene.splinecode" />
         </div>
 
-        <div className="absolute inset-0 z-20 text-white flex flex-col justify-center mx-64">
-          <div className="text-white max-w-4xl w-full space-y-6">
-            <div className="space-y-2">
-              <h2 className="text-purple-300 text-lg md:text-xl font-light tracking-wide">
+        <div className="absolute inset-0 z-20 text-white flex flex-col justify-center xl:mx-80 lg:mx-64 md:mx-20 mx-10">
+          <div className="text-white max-w-4xl w-full flex flex-col xl:space-y-6 space-y-3">
+            <div className="flex flex-col justify-center space-y-1">
+              <h2 className="text-purple-300 xl:text-2xl md:text-xl text-lg font-light tracking-widest">
                 Hey! I'm
               </h2>
 
-              <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-wider leading-tight">
+              <h1 className="xl:text-6xl md:text-5xl text-3xl font-bold uppercase tracking-wider leading-tight">
                 Zunaira <span className="text-purple-400">Asif</span>
               </h1>
             </div>
 
             <TypingText />
 
-            <p className="text-sm text-gray-300 max-w-2xl leading-relaxed">
+            <p className="xl:text-base text-sm text-gray-300 xl:max-w-3xl max-w-2xl leading-relaxed">
               As a passionate developer, I thrive on building intuitive and
               dynamic applications that deliver exceptional user experiences. I
               am dedicated to writing clean, efficient code and constantly
@@ -33,15 +33,19 @@ export default function Home() {
             </p>
 
             <div className="flex gap-4 flex-wrap">
-              <button className="bg-purple-500 hover:bg-purple-600 text-white font-medium px-6 py-2 rounded-full transition">
+              <button className="border-2 border-purple-600 bg-purple-500 hover:bg-purple-600 text-white font-medium px-6 py-2 rounded-full transition">
                 See My Work
               </button>
-              <button className="border border-white hover:border-purple-400 text-white hover:text-purple-300 font-medium px-6 py-2 rounded-full transition">
+              <a
+                target="_blank"
+                href="https://wa.me/+923034774200"
+                className="border border-white hover:border-purple-400 text-white hover:text-purple-300 font-medium px-6 py-2 rounded-full transition"
+              >
                 Contact Me
-              </button>
+              </a>
             </div>
 
-            <div className="pt-6 text-sm text-gray-400">
+            <div className="pt-6 xl:text-base text-sm text-gray-400">
               Let’s build something cool together 🚀
             </div>
           </div>

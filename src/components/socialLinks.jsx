@@ -70,31 +70,31 @@ const SocialLinks = () => {
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a href="https://github.com/zunairaasif" target="_blank">
-            <FaGithub />
+            <FaGithub className="xl:size-8" />
           </a>
         </span>
         <span>
           <a
+            target="_blank"
             href="https://www.linkedin.com/in/zunaira-a-46b072216/"
-            target="_blank"
           >
-            <FaLinkedinIn />
+            <FaLinkedinIn className="xl:size-8" />
           </a>
         </span>
         <span>
           <a
+            target="_blank"
             href="https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com"
-            target="_blank"
           >
-            <MdOutlineMail />
+            <MdOutlineMail className="xl:size-8" />
           </a>
         </span>
         <span>
           <a
-            href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
             target="_blank"
+            href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
           >
-            <FaUpwork />
+            <FaUpwork className="xl:size-8" />
           </a>
         </span>
       </div>

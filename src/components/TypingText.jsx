@@ -8,7 +8,7 @@ const TypingText = () => {
       wrapper="div"
       cursor={true}
       repeat={Infinity}
-      className="text-xl text-purple-300 my-4 text-center sm:text-2xl sm:mb-2 md:text-left"
+      className="xl:text-3xl md:text-2xl text-xl text-purple-300 my-4"
       sequence={[
         "Frontend Developer",
         4000,

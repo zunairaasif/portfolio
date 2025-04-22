@@ -42,30 +42,30 @@ const Navbar = () => {
         py-5 -mb-[100px] box-border fixed left-1/2 -translate-x-1/2 top-0 z-[9999] 
         transition-all duration-300 ease-in-out md:py-5 xl:py-[35px]"
       >
-        <span className="font-display font-semibold tracking-wider text-xl">
+        <span className="font-display font-semibold tracking-wider xl:text-2xl text-xl">
           Zunaira Asif
         </span>
 
-        <div className="flex md:flex-row flex-col md:items-center items-end md:gap-16 gap-2">
+        <div className="flex md:flex-row flex-col md:items-center items-end md:gap-16 gap-2 xl:text-lg text-sm">
           <a
-            data-href="#about"
             href="#about"
+            data-href="#about"
             className="header-link font-medium"
           >
             <HoverLinks text="ABOUT" />
           </a>
 
           <a
-            data-href="#projects"
             href="#projects"
+            data-href="#projects"
             className="header-link font-medium"
           >
             <HoverLinks text="PROJECTS" />
           </a>
 
           <a
-            data-href="#contact"
             href="#contact"
+            data-href="#contact"
             className="header-link font-medium"
           >
             <HoverLinks text="CONTACT" />
