@@ -1,7 +1,18 @@
 import { Suspense } from "react";
+import { Geist, Geist_Mono } from "next/font/google";
 
 import "@styles/globals.css";
 import { LoadingProvider } from "@context/LoadingProvider";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Zunaira Asif",
@@ -24,7 +35,11 @@ export default function RootLayout({ children }) {
             />
           </head>
 
-          <body>{children}</body>
+          <body
+            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          >
+            {children}
+          </body>
         </html>
       </Suspense>
     </LoadingProvider>

@@ -47,15 +47,27 @@ const Navbar = () => {
         </span>
 
         <div className="flex md:flex-row flex-col md:items-center items-end md:gap-16 gap-2">
-          <a data-href="#about" href="#about" className="header-link">
+          <a
+            data-href="#about"
+            href="#about"
+            className="header-link font-medium"
+          >
             <HoverLinks text="ABOUT" />
           </a>
 
-          <a data-href="#projects" href="#projects" className="header-link">
+          <a
+            data-href="#projects"
+            href="#projects"
+            className="header-link font-medium"
+          >
             <HoverLinks text="PROJECTS" />
           </a>
 
-          <a data-href="#contact" href="#contact" className="header-link">
+          <a
+            data-href="#contact"
+            href="#contact"
+            className="header-link font-medium"
+          >
             <HoverLinks text="CONTACT" />
           </a>
         </div>

@@ -1,7 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import { TbNotes } from "react-icons/tb";
-import { FaGithub, FaUpwork, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
+import { MdOutlineMail } from "react-icons/md";
+import { FaGithub, FaUpwork, FaLinkedinIn } from "react-icons/fa6";
 
 import "@styles/socialLinks.css";
 import HoverLinks from "./HoverLinks";
@@ -82,15 +83,18 @@ const SocialLinks = () => {
         </span>
         <span>
           <a
+            href="https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com"
+            target="_blank"
+          >
+            <MdOutlineMail />
+          </a>
+        </span>
+        <span>
+          <a
             href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
             target="_blank"
           >
             <FaUpwork />
-          </a>
-        </span>
-        <span>
-          <a href="https://wa.me/+923034774200" target="_blank">
-            <FaWhatsapp />
           </a>
         </span>
       </div>
