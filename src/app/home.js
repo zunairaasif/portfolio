@@ -24,11 +24,11 @@ export default function Home() {
             <TypingText />
 
             <p className="text-sm text-gray-300 max-w-2xl leading-relaxed">
-              As a passionate frontend developer, I thrive on building intuitive
-              and dynamic applications that deliver exceptional user
-              experiences. I am dedicated to writing clean, efficient code and
-              constantly improving my skills to stay ahead in the ever-evolving
-              tech landscape. I aim to transform ideas into interactive,
+              As a passionate developer, I thrive on building intuitive and
+              dynamic applications that deliver exceptional user experiences. I
+              am dedicated to writing clean, efficient code and constantly
+              improving my skills to stay ahead in the ever-evolving tech
+              landscape. I aim to transform ideas into interactive,
               high-performance applications.
             </p>
 
