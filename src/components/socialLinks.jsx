@@ -4,7 +4,7 @@ import { TbNotes } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
 import { FaGithub, FaUpwork, FaLinkedinIn } from "react-icons/fa6";
 
-import "../styles/socialLinks.css";
+import "@styles/socialLinks.css";
 import HoverLinks from "./HoverLinks";
 
 const SocialLinks = () => {
