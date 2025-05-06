@@ -2,7 +2,7 @@
 import Marquee from "react-fast-marquee";
 import { useEffect, useState } from "react";
 
-import "@styles/loading.css";
+import "../styles/loading.css";
 import { useLoading } from "@context/LoadingProvider";
 
 const Loading = ({ percent }) => {
