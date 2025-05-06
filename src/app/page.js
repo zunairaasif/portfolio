@@ -2,14 +2,14 @@ import Home from "./home";
 import About from "./about";
 import Navbar from "@components/Navbar";
 import Cursor from "@components/Cursor";
-import SocialLinks from "@components/SocialLinks";
+import Links from "@components/Links";
 
 const Page = () => {
   return (
     <div className="container-main">
       <Cursor />
       <Navbar />
-      <SocialLinks />
+      <Links />
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <div className="container-main">
