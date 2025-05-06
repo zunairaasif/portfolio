@@ -19,7 +19,7 @@ export default function Home() {
           >
             <div className="flex flex-col md:mt-28 mt-24 items-center justify-center space-y-1">
               <h1
-                className="xl:text-7xl md:text-6xl text-3xl font-bold uppercase 
+                className="xl:text-7xl md:text-6xl text-4xl font-bold uppercase 
                 tracking-wider leading-tight"
               >
                 Zunaira <span className="text-purple-400">Asif</span>
