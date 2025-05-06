@@ -9,7 +9,7 @@
 }
 .social-icons {
   position: absolute;
-  left: -20px;
+  /* left: -5px; */
   bottom: 20px;
   display: none;
   flex-direction: column;
@@ -49,7 +49,7 @@
   display: flex;
   gap: 5px;
   bottom: 40px;
-  right: 0;
+  right: 20px;
   width: auto;
   text-wrap: nowrap;
   letter-spacing: 4px;
