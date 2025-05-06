@@ -32,7 +32,7 @@ export default function Home() {
             <div
               className="flex lg:flex-row flex-col bg-black/60 backdrop-blur-sm p-6 rounded-2xl  
               border-purple-900/50 shadow-lg shadow-purple-900/20 lg:items-center w-full border
-              justify-between xl:mt-42 lg:mt-26 mt-40 relative overflow-hidden lg:gap-0 gap-14"
+              justify-between xl:mt-42 lg:mt-26 mt-24 relative overflow-hidden lg:gap-0 gap-14"
             >
               <div className="flex flex-col self-start gap-1">
                 <h2 className="text-purple-300 xl:text-base text-sm font-light tracking-widest">
