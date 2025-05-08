@@ -1,25 +1,10 @@
-"use client";
-import React, { useState, useRef } from "react";
+import { CardBody, CardContainer } from "@components/ui/3d-card";
 
 const About = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [isHovering, setIsHovering] = useState(false);
-  const cardRef = useRef(null);
-
-  const handleMouseMove = (e) => {
-    if (!cardRef.current) return;
-
-    const { left, top, width, height } =
-      cardRef.current.getBoundingClientRect();
-    const x = (e.clientX - left) / width - 0.8; // (-0.5 to 0.5)
-    const y = (e.clientY - top) / height - 0.8; // (-0.5 to 0.5)
-    setPosition({ x, y });
-  };
-
   return (
     <div
       className="flex lg:flex-row flex-col lg:justify-between justify-center lg:py-0 py-20 
-      items-center lg:px-40 md:px-20 px-10 lg:gap-36 md:gap-20 gap-10 min-h-screen md:py-10"
+      items-center lg:px-40 md:px-20 px-10 lg:gap-30 gap-0 min-h-screen md:py-10"
     >
       <div className="flex flex-col justify-center gap-10 w-full">
         <h1 className="md:text-8xl text-7xl text-gray-300">
@@ -37,31 +22,11 @@ const About = () => {
         </span>
       </div>
 
-      <div
-        ref={cardRef}
-        onMouseMove={handleMouseMove}
-        className="perspective-[1000px]"
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => {
-          setIsHovering(false);
-          setPosition({ x: 0, y: 0 });
-        }}
-      >
-        <div
-          className={`flex flex-col justify-center tracking-wide gap-5 border 
-            border-purple-400 p-5 rounded-lg text-sm shadow-lg w-full transition-all 
-            duration-300 ease-out transform-gpu 
-            ${isHovering ? "hover:border-purple-300" : ""}`}
-          style={{
-            transform: isHovering
-              ? `scale(1.02) rotateX(${position.y * 8}deg) rotateY(${
-                  -position.x * 8
-                }deg) translateZ(20px)`
-              : "scale(1)",
-            boxShadow: `${-position.x * 8}px ${
-              position.y * 8
-            }px 20px -5px rgba(192, 132, 252, 0.5)`, // Purple glow
-          }}
+      <CardContainer className="inter-var">
+        <CardBody
+          className="bg-gray-50 relative group/card dark:hover:shadow-2xl border
+          dark:hover:shadow-purple-500/[0.1] dark:bg-transparent dark:border-white/[0.2] 
+          border-black/[0.1] w-full h-auto rounded-xl p-6"
         >
           <span>
             I don’t just build UIs — I build trust. I specialize in crafting
@@ -90,8 +55,8 @@ const About = () => {
               <li>Recreate or redesign the existing design with clean code.</li>
             </ul>
           </div>
-        </div>
-      </div>
+        </CardBody>
+      </CardContainer>
     </div>
   );
 };

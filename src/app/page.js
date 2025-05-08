@@ -1,9 +1,10 @@
 import Home from "./home";
+// import Time from "./time";
 import About from "./about";
+import Qalification from "./qalification";
 import Navbar from "@components/Navbar";
 import Cursor from "@components/Cursor";
 import Links from "@components/Links";
-import Time from "./time";
 
 const Page = () => {
   return (
@@ -23,7 +24,8 @@ const Page = () => {
 
               <div className="relative z-10">
                 <About />
-                <Time />
+                <Qalification />
+                {/* <Time /> */}
               </div>
             </div>
           </div>
