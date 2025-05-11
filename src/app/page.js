@@ -1,10 +1,12 @@
 import Home from "./home";
-// import Time from "./time";
 import About from "./about";
-import Qalification from "./qalification";
+import Footer from "./footer";
+import Contact from "./contact";
+import Links from "@components/Links";
+import Experience from "./experience";
 import Navbar from "@components/Navbar";
 import Cursor from "@components/Cursor";
-import Links from "@components/Links";
+import Qalification from "./qalification";
 
 const Page = () => {
   return (
@@ -24,8 +26,10 @@ const Page = () => {
 
               <div className="relative z-10">
                 <About />
+                <Experience />
                 <Qalification />
-                {/* <Time /> */}
+                <Contact />
+                <Footer />
               </div>
             </div>
           </div>

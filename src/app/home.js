@@ -40,12 +40,14 @@ export default function Home() {
                 </h2>
                 <TypingText />
                 <div className="flex gap-4 mt-4 flex-wrap">
-                  <button
+                  <a
+                    href="#projects"
+                    data-href="#projects"
                     className="border-2 border-purple-600 bg-purple-500 hover:bg-purple-600 xl:py-2 py-1
                     text-white font-medium xl:px-6 px-4 rounded-full transition lg:text-base text-sm"
                   >
                     See My Work
-                  </button>
+                  </a>
                   <a
                     target="_blank"
                     href="https://wa.me/+923034774200"

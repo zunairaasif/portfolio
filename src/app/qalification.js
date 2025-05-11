@@ -20,10 +20,10 @@ const Qalification = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center pt-10">
       <div className="w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-7xl text-4xl xl:text-8xl font-bold text-center text-white relative z-20">
-          My <span className="text-purple-300">Qualification</span>
+          My <span className="text-purple-400">Qualification</span>
         </h1>
         <div className="w-[40rem] h-40 relative">
           <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <Suspense>
         <html lang="en">
           <head>
-            <link rel="icon" type="image/x-icon" href="/zunaira.png" />
+            <link rel="icon" type="image/x-icon" href="/image/zunaira.png" />
 
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" />

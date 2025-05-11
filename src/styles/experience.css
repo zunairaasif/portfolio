@@ -1,0 +1,68 @@
+.career-timeline {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  width: 3px;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+.career-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(
+    to bottom,
+    #aa42ff 20%,
+    var(--accentColor) 50%,
+    transparent 95%
+  );
+  will-change: height;
+  transition: height 0.2s ease-out;
+  z-index: 0;
+}
+
+.career-dot {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  scroll-behavior: smooth;
+  transform: translate(-50%, 50%);
+  background-color: #aa42ff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px 2px #d29bff, 0px 0px 15px 8px #d097ff,
+    0px 0px 110px 20px #f2c0ff;
+  animation: timeline 0.8s linear infinite forwards;
+}
+
+@keyframes timeline {
+  10%,
+  20%,
+  50%,
+  70%,
+  90% {
+    box-shadow: 0px 0px 5px 2px #d29bff;
+  }
+  10%,
+  30%,
+  0%,
+  100%,
+  64%,
+  80% {
+    box-shadow: 0px 0px 5px 2px #d29bff, 0px 0px 15px 5px #d097ff,
+      0px 0px 110px 20px #f2c0ff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .career-timeline {
+    left: 0%;
+  }
+}

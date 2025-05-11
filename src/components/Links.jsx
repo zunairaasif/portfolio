@@ -70,7 +70,7 @@ const Links = () => {
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a href="https://github.com/zunairaasif" target="_blank">
-            <FaGithub className="xl:size-8" />
+            <FaGithub className="xl:size-9 xl:mb-16" />
           </a>
         </span>
         <span>
@@ -78,7 +78,7 @@ const Links = () => {
             target="_blank"
             href="https://www.linkedin.com/in/zunaira-a-46b072216/"
           >
-            <FaLinkedinIn className="xl:size-8" />
+            <FaLinkedinIn className="xl:size-9 xl:mb-10" />
           </a>
         </span>
         <span>
@@ -86,7 +86,7 @@ const Links = () => {
             target="_blank"
             href="https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com"
           >
-            <MdOutlineMail className="xl:size-8" />
+            <MdOutlineMail className="xl:size-9 xl:mb-5" />
           </a>
         </span>
         <span>
@@ -94,7 +94,7 @@ const Links = () => {
             target="_blank"
             href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
           >
-            <FaUpwork className="xl:size-8" />
+            <FaUpwork className="xl:size-9" />
           </a>
         </span>
       </div>
