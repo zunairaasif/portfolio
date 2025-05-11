@@ -1,7 +1,9 @@
 import Home from "./home";
 import About from "./about";
 import Footer from "./footer";
+import Skills from "./skills";
 import Contact from "./contact";
+import Projects from "./projects";
 import Links from "@components/Links";
 import Experience from "./experience";
 import Navbar from "@components/Navbar";
@@ -27,6 +29,8 @@ const Page = () => {
               <div className="relative z-10">
                 <About />
                 <Experience />
+                <Skills />
+                <Projects />
                 <Qalification />
                 <Contact />
                 <Footer />
