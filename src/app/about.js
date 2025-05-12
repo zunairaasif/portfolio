@@ -1,16 +1,16 @@
 "use client";
 import { CardBody, CardContainer } from "@components/ui/3d-card";
-import { HeroHighlight, Highlight } from "@components/ui/hero-highlight";
+import { Highlight } from "@components/ui/hero-highlight";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col md:py-10 py-20 lg:px-40 md:px-20 px-10"
+      className="flex flex-col md:py-10 py-20 lg:px-40 md:px-20 px-5 gap-10"
     >
       <div
         className="flex lg:flex-row flex-col lg:justify-between
-        justify-center items-center lg:gap-26 gap-0"
+        justify-center items-center lg:gap-26 gap-10"
       >
         <div className="flex flex-col justify-center gap-10 w-full">
           <h1 className="md:text-8xl text-7xl text-gray-300">
@@ -33,9 +33,9 @@ const About = () => {
 
         <CardContainer className="inter-var">
           <CardBody
-            className="bg-gray-50 relative group/card dark:hover:shadow-2xl border
+            className="bg-gray-50 relative group/card dark:hover:shadow-2xl border md:text-base text-sm
             dark:hover:shadow-purple-500/[0.1] dark:bg-transparent dark:border-white/[0.2] 
-            border-black/[0.1] w-full h-auto rounded-xl p-6 dark:hover:border-purple-900"
+            border-black/[0.1] w-full h-auto rounded-xl md:p-6 p-4 dark:hover:border-purple-900"
           >
             <span>
               I don’t just build UIs — I build trust. I specialize in crafting
@@ -44,7 +44,9 @@ const About = () => {
             </span>
 
             <div className="flex flex-col gap-2 text-center">
-              <span className="text-base text-purple-400">What drives me?</span>
+              <span className="md:text-base text-sm text-purple-400">
+                What drives me?
+              </span>
               <span>
                 Solving tough technical puzzles and staying ahead of the curve.
                 I approach every project with equal parts analytical thinking
@@ -52,9 +54,9 @@ const About = () => {
               </span>
             </div>
 
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 mt-3">
               <span className="text-base text-purple-400">Why Me?</span>
-              <ul className="list-disc list-inside text-xs leading-5">
+              <ul className="list-disc ml-5 xl:text-sm text-xs xl:leading-6 leading-5">
                 <li>
                   Understand your needs and deliver a high-quality solution.
                 </li>
@@ -70,7 +72,7 @@ const About = () => {
         </CardContainer>
       </div>
 
-      <span className="text-xl text-center tracking-widest font-light">
+      <span className="xl:text-2xl text-xl text-center tracking-widest font-light">
         Whether you need a dynamic web app or a sleek interactive interface,
         I'll be with you at every step —{" "}
         <Highlight className="text-black dark:text-white">

@@ -38,15 +38,15 @@ const Navbar = () => {
       />
 
       <header
-        className="flex max-w-[var(--cMaxWidth)] w-[var(--cWidth)] justify-between 
+        className="flex items-center max-w-[var(--cMaxWidth)] w-[var(--cWidth)] justify-between 
         -mb-[100px] box-border fixed left-1/2 -translate-x-1/2 top-0 z-[9999] 
-        transition-all duration-300 ease-in-out py-7 xl:py-9 px-8"
+        transition-all duration-300 ease-in-out py-7 xl:py-9 md:px-8 px-2"
       >
-        <span className="font-display font-semibold tracking-wider xl:text-2xl text-xl">
+        <span className="font-display font-semibold tracking-wider xl:text-2xl md:text-xl text-base">
           Zunaira Asif
         </span>
 
-        <div className="flex md:flex-row flex-col md:items-center items-end md:gap-16 gap-2 xl:text-lg text-base">
+        <div className="flex flex-row items-center items-end md:gap-16 gap-3 xl:text-lg md:text-base text-xs">
           <a
             href="#about"
             data-href="#about"

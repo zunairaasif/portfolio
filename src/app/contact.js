@@ -49,11 +49,16 @@ const Contact = () => {
   ];
 
   return (
-    <div id="contact" className="grid lg:grid-cols-2 grid-cols-1 pb-14 -mt-6">
+    <div id="contact" className="grid lg:grid-cols-2 grid-cols-1 pb-14">
       <Globe />
 
-      <div className="flex flex-col justify-center lg:gap-10 gap-8 md:ml-20 ml-10 mt-14">
-        <div className="flex flex-col gap-1">
+      <div className="lg:block relative flex flex-col justify-center lg:gap-10 gap-8 self-center">
+        <div
+          className="lg:hidden absolute w-full top-0 inset-x-0 md:h-20 h-10 bg-gradient-to-t
+          pointer-events-none select-none from-transparent dark:to-black to-white z-40"
+        />
+
+        <div className="flex flex-col gap-1 md:ml-20 ml-5 lg:mt-0 mt-12">
           <span className="lg:text-base text-sm text-gray-400">
             Feel free to
           </span>
@@ -62,7 +67,7 @@ const Contact = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 md:ml-20 ml-5">
           {contact.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
               <p className="text-xl mr-6 cursor-pointer duration-300">

@@ -7,12 +7,17 @@ export const HoverEffect = ({ items, className }) => {
   let [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className={cn("grid grid-cols-1 lg:grid-cols-2 py-3", className)}>
+    <div
+      className={cn(
+        "grid grid-cols-1 lg:grid-cols-2 md:-mt-0 -mt-10 md:mx-0 mx-2",
+        className
+      )}
+    >
       {items.map((item, idx) => (
         <div
           href={item?.year}
           key={item?.year}
-          className="relative group  block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >

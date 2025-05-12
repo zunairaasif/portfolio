@@ -11,7 +11,7 @@ export default function Home() {
 
         <div
           className="absolute inset-0 z-20 text-white flex flex-col 
-          items-center justify-center xl:mx-20 lg:mx-56 md:mx-20 mx-10"
+          items-center justify-center xl:mx-20 lg:mx-56 md:mx-20 mx-5"
         >
           <div
             className="h-full text-snowWhite max-w-6xl w-full flex 

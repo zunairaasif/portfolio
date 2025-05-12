@@ -396,7 +396,7 @@ export default function Globe() {
   return (
     <div className="lg:max-w-7xl mx-auto w-full relative overflow-hidden h-[350px] md:h-[800px] lg:h-screen px-4">
       <div
-        className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b 
+        className="absolute w-full bottom-0 inset-x-0 md:h-40 h-20 bg-gradient-to-b 
         pointer-events-none select-none from-transparent dark:to-black to-white z-40"
       />
       <div className="absolute w-full md:-bottom-20 -bottom-10 h-72 h-full z-10">

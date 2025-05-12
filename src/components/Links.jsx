@@ -99,7 +99,10 @@ const Links = () => {
         </span>
       </div>
 
-      <button className="resume-button" onClick={handleDownload}>
+      <button
+        className="resume-button bottom-10 md:right-5 right-1"
+        onClick={handleDownload}
+      >
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
