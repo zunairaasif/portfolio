@@ -62,7 +62,7 @@ const Experience = () => {
           <div className="career-dot" ref={dotRef}></div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 md:ml-0 ml-6">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 md:ml-12 ml-6">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
               <span className="xl:text-3xl text-2xl">Frontend Developer</span>
@@ -73,13 +73,27 @@ const Experience = () => {
             <span className="xl:text-sm text-xs mt-2">Jan 2024 - Now</span>
           </div>
           <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore
-            sit non ipsum temporibus quidem, deserunt eaque officiis mollitia
-            ratione suscipit repellat.
+            During my freelance journey, I’ve successfully collaborated with
+            multiple clients, consistently meeting <b>tight deadlines</b> while
+            ensuring <b>100% client satisfaction</b> — many of whom have become{" "}
+            <b>long-term partners</b>. I deepened my expertise in frontend
+            development by translating complex <b>Figma designs</b> into
+            pixel-perfect, fully <b>responsive</b> interfaces with the help of
+            multiple UI libraries and packages. I also gained hands-on
+            experience with <b>Shopify</b> customization.
+            <br />
+            Additionally, I worked how to integrate secure payment solutions
+            using <b>Stripe</b>, and worked with <b>AWS S3 buckets</b> for file
+            storage. I tackled and integrated <b>complex third-party APIs</b>,
+            which strengthened my problem-solving and debugging <b>abilities</b>{" "}
+            in real-world projects. This phase significantly <b>enhanced</b> my
+            adaptability, communication skills and ability to deliver
+            high-quality solutions under pressure. Still I'm keeping myself{" "}
+            <b>up to date</b> with the latest industry trends and technologies.
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 md:ml-0 ml-6 my-10">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 ml-6 md:ml-12 my-10">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
               <span className="xl:text-3xl text-2xl">
@@ -96,15 +110,19 @@ const Experience = () => {
             <span className="xl:text-sm text-xs mt-2">Oct 2022 - Dec 2023</span>
           </div>
           <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
-            Implemented best practices for code quality and maintainability.
-            Actively participated in code reviews and debugging issues. Assisted
-            in optimizing application performance. Successfully delivered
-            projects within deadlines, prioritized tasks and managed time
-            effectively.
+            Implemented industry best practices for code quality and
+            maintainability. Worked extensively with <b>3D</b> frameworks and
+            libraries. Actively participated in{" "}
+            <b>code reviews and debugging sessions</b>, assisting in identifying
+            and resolving issues efficiently. Played a key role in{" "}
+            <b>optimizing application</b> performance to enhance user
+            experience. Successfully delivered multiple projects{" "}
+            <b>on time by prioritizing tasks</b>, managing workloads
+            effectively, and ensuring consistent communication across the team.
           </span>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20 gap-5 md:ml-0 ml-6">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 md:ml-12 ml-6">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
               <span className="xl:text-3xl text-2xl">React.js Intern</span>
@@ -121,12 +139,12 @@ const Experience = () => {
             </span>
           </div>
           <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
-            Learned to develop responsive and user-friendly websites and web
-            applications. Collaborated closely with designers and product
-            managers in agile environments. Integrated RESTful APIs to build
-            dynamic, data-driven applications. Learned how to consistently
-            deliver high-quality work within tight deadlines through effective
-            time management.
+            Learned to develop <b>responsive and user-friendly</b> websites and
+            web applications. Collaborated closely with designers and product
+            managers in agile environments. Integrated <b>RESTful APIs</b> to
+            build dynamic, data-driven applications. Learned how to consistently
+            deliver high-quality work within <b>tight deadlines</b> through
+            effective time management.
           </span>
         </div>
       </div>

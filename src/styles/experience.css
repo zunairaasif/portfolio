@@ -61,6 +61,11 @@
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .career-timeline {
+    left: 0%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .career-timeline {
     left: 0%;
