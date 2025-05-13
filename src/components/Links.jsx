@@ -69,12 +69,13 @@ const Links = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href="https://github.com/zunairaasif" target="_blank">
+          <a alt="Github" href="https://github.com/zunairaasif" target="_blank">
             <FaGithub className="xl:size-9 xl:mb-16" />
           </a>
         </span>
         <span>
           <a
+            alt="LinkedIn"
             target="_blank"
             href="https://www.linkedin.com/in/zunaira-a-46b072216/"
           >
@@ -83,6 +84,7 @@ const Links = () => {
         </span>
         <span>
           <a
+            alt="Email"
             target="_blank"
             href="https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com"
           >
@@ -91,6 +93,7 @@ const Links = () => {
         </span>
         <span>
           <a
+            alt="Upwork"
             target="_blank"
             href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
           >

@@ -38,11 +38,17 @@ const Contact = () => {
 
   const social = [
     {
+      name: "LinkedIn",
       link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
       icon: <FaLinkedin />,
     },
-    { link: "https://github.com/zunairaasif", icon: <FaGithubSquare /> },
     {
+      name: "Github",
+      link: "https://github.com/zunairaasif",
+      icon: <FaGithubSquare />,
+    },
+    {
+      name: "Upwork",
       link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
       icon: <FaSquareUpwork />,
     },
@@ -67,7 +73,7 @@ const Contact = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col gap-5 md:ml-20 ml-5">
+        <div className="flex flex-col gap-5 md:ml-20 ml-5 lg:mt-12 mt-5">
           {contact.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
               <p className="text-xl mr-6 cursor-pointer duration-300">
@@ -85,7 +91,7 @@ const Contact = () => {
             </div>
           ))}
 
-          <div className="flex items-center">
+          <div className="flex items-center mt-2">
             <h3 className="text-xl text-gray-300">Social</h3>
             <div className="bg-gray-400 w-8 h-[2px] mx-4"></div>
 
@@ -94,6 +100,7 @@ const Contact = () => {
                 <a
                   key={index}
                   target="blank"
+                  alt={item.name}
                   href={item.link}
                   className="text-3xl text-gray-300 hover:text-purple-400 
                   hover:-translate-y-1.5 shadow-lg duration-300"
