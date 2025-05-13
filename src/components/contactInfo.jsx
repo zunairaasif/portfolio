@@ -37,17 +37,14 @@ export default function ContactInfo() {
 
   const social = [
     {
-      alt: "linkedIn",
       link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
       icon: <FaLinkedin />,
     },
     {
-      alt: "github",
       link: "https://github.com/zunairaasif",
       icon: <FaGithubSquare />,
     },
     {
-      alt: "upwork",
       link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
       icon: <FaSquareUpwork />,
     },
@@ -89,8 +86,8 @@ export default function ContactInfo() {
               <a
                 key={index}
                 target="blank"
-                alt={item.alt}
                 href={item.link}
+                aria-label={index}
                 className="text-3xl text-gray-300 hover:text-purple-400 
                 hover:-translate-y-1.5 shadow-lg duration-300"
               >
