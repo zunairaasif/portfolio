@@ -66,31 +66,42 @@ const Experience = () => {
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
               <span className="xl:text-3xl text-2xl">Frontend Developer</span>
-              <span className="text-purple-400 xl:text-lg text-base">
+              <span className="text-purple-400 xl:text-xl text-base">
                 Freelance
               </span>
             </div>
-            <span className="xl:text-sm text-xs mt-2">Jan 2024 - Now</span>
+            <span className="xl:text-base text-xs mt-2">Jan 2024 - Now</span>
           </div>
-          <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
-            During my freelance journey, I’ve successfully collaborated with
-            multiple clients, consistently meeting <b>tight deadlines</b> while
-            ensuring <b>100% client satisfaction</b> — many of whom have become{" "}
-            <b>long-term partners</b>. I deepened my expertise in frontend
-            development by translating complex <b>Figma designs</b> into
-            pixel-perfect, fully <b>responsive</b> interfaces with the help of
-            multiple UI libraries and packages. I also gained hands-on
-            experience with <b>Shopify</b> customization.
-            <br />
-            Additionally, I worked how to integrate secure payment solutions
-            using <b>Stripe</b>, and worked with <b>AWS S3 buckets</b> for file
-            storage. I tackled and integrated <b>complex third-party APIs</b>,
-            which strengthened my problem-solving and debugging <b>abilities</b>{" "}
-            in real-world projects. This phase significantly <b>enhanced</b> my
-            adaptability, communication skills and ability to deliver
-            high-quality solutions under pressure. Still I'm keeping myself{" "}
-            <b>up to date</b> with the latest industry trends and technologies.
-          </span>
+          <div className="flex flex-col xl:text-base text-sm tracking-wide leading-5 font-extralight gap-2">
+            <span>
+              In my freelance journey, along with expertise in frontend, I have
+              gained foundational knowledge of <b>backend development</b> using
+              Node.js and Express.js, and have hands-on building simple APIs and
+              handling basic server-side logic.{" "}
+            </span>
+            <span>
+              Through this time, I’ve successfully collaborated with multiple
+              clients, consistently meeting <b>tight deadlines</b> while
+              ensuring <b>100% client satisfaction</b> — many of whom have
+              become <b>long-term partners</b>. I deepened my expertise in
+              frontend development by translating complex <b>Figma designs</b>{" "}
+              into pixel-perfect, fully <b>responsive</b> interfaces with the
+              help of multiple UI libraries and packages. I also gained hands-on
+              experience with <b>Shopify</b> customization.
+            </span>
+            <span>
+              Additionally, I worked how to integrate secure payment solutions
+              using <b>Stripe</b>, and worked with <b>AWS S3 buckets</b> for
+              file storage. I tackled and integrated{" "}
+              <b>complex third-party APIs</b>, which strengthened my
+              problem-solving and debugging <b>abilities</b> in real-world
+              projects. This phase significantly <b>enhanced</b> my
+              adaptability, communication skills and ability to deliver
+              high-quality solutions under pressure. Still I'm keeping myself{" "}
+              <b>up to date</b> with the latest industry trends and
+              technologies.
+            </span>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 ml-6 md:ml-12 my-10">

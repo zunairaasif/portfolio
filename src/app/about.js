@@ -10,14 +10,14 @@ const About = () => {
     >
       <div
         className="flex lg:flex-row flex-col lg:justify-between
-        justify-center items-center lg:gap-26 gap-10"
+        justify-center items-center xl:gap-26 lg:gap-20 gap-10"
       >
         <div className="flex flex-col justify-center gap-10 w-full">
           <h1 className="md:text-8xl text-7xl text-gray-300">
             ABOUT <br />
             <span className="text-purple-400 animate-pulse">ME</span>
           </h1>
-          <span className="xl:text-sm text-xs text-gray-300 tracking-wide leading-5">
+          <span className="xl:text-base text-xs text-gray-300 tracking-wide leading-5">
             Myself Zunaira Asif — your trusted developer. I'm here to create
             your websites & web applications with responsive and creative
             designs. I will be your competent developer as I have an experience
@@ -33,7 +33,7 @@ const About = () => {
 
         <CardContainer className="inter-var">
           <CardBody
-            className="bg-gray-50 relative group/card dark:hover:shadow-2xl border md:text-base text-sm
+            className="bg-gray-50 relative group/card dark:hover:shadow-2xl border xl:text-base text-sm
             dark:hover:shadow-purple-500/[0.1] dark:bg-transparent dark:border-white/[0.2] 
             border-black/[0.1] w-full h-auto rounded-xl md:p-6 p-4 dark:hover:border-purple-900"
           >
@@ -44,7 +44,7 @@ const About = () => {
             </span>
 
             <div className="flex flex-col gap-2 text-center">
-              <span className="md:text-base text-sm text-purple-400">
+              <span className="xl:text-lg text-base text-purple-400">
                 What drives me?
               </span>
               <span>
@@ -55,8 +55,10 @@ const About = () => {
             </div>
 
             <div className="flex flex-col gap-3 mt-3">
-              <span className="text-base text-purple-400">Why Me?</span>
-              <ul className="list-disc ml-5 xl:text-sm text-xs xl:leading-6 leading-5">
+              <span className="xl:text-lg text-base text-purple-400">
+                Why Me?
+              </span>
+              <ul className="list-disc ml-5 xl:text-base text-xs xl:leading-6 leading-5">
                 <li>
                   Understand your needs and deliver a high-quality solution.
                 </li>
