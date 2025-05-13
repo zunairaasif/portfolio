@@ -1,117 +1,15 @@
-"use client";
-import {
-  FaUserAlt,
-  FaPhoneAlt,
-  FaLinkedin,
-  FaGithubSquare,
-} from "react-icons/fa";
-import React from "react";
-import Globe from "@components/globe";
-import { MdEmail } from "react-icons/md";
-import { FaSquareUpwork, FaLocationDot } from "react-icons/fa6";
+import ContactInfo from "@components/contactInfo";
+import Spline from "@splinetool/react-spline/next";
 
 const Contact = () => {
-  const contact = [
-    {
-      title: "Zunaira Asif",
-      icon: <FaUserAlt className="size-4 text-purple-400" />,
-    },
-    {
-      title: "+92 303 4774200",
-      icon: <FaPhoneAlt className="size-4 text-purple-400" />,
-      link: () => window.open("https://wa.me/923034774200", "_blank"),
-    },
-    {
-      title: "zunairaa.dev@gmail.com",
-      icon: <MdEmail className="text-purple-400" />,
-      link: () =>
-        window.open(
-          "https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com",
-          "_blank"
-        ),
-    },
-    {
-      title: "Sahiwal, Pakistan",
-      icon: <FaLocationDot className="text-purple-400" />,
-    },
-  ];
-
-  const social = [
-    {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
-      icon: <FaLinkedin />,
-    },
-    {
-      name: "Github",
-      link: "https://github.com/zunairaasif",
-      icon: <FaGithubSquare />,
-    },
-    {
-      name: "Upwork",
-      link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
-      icon: <FaSquareUpwork />,
-    },
-  ];
-
   return (
-    <div id="contact" className="grid lg:grid-cols-2 grid-cols-1 pb-14">
-      <Globe />
-
-      <div className="lg:block relative flex flex-col justify-center lg:gap-10 gap-8 self-center">
-        <div
-          className="lg:hidden absolute w-full top-0 inset-x-0 md:h-20 h-10 bg-gradient-to-t
-          pointer-events-none select-none from-transparent dark:to-black to-white z-40"
-        />
-
-        <div className="flex flex-col gap-1 md:ml-20 ml-5 lg:mt-0 mt-12">
-          <span className="lg:text-base text-sm text-gray-400">
-            Feel free to
-          </span>
-          <h1 className="lg:text-5xl text-4xl uppercase font-semibold">
-            Contact <span className="text-purple-400">Me</span>
-          </h1>
-        </div>
-
-        <div className="flex flex-col gap-5 md:ml-20 ml-5 lg:mt-12 mt-5">
-          {contact.map((item, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <p className="text-xl mr-6 cursor-pointer duration-300">
-                {item.icon}
-              </p>
-              <span
-                onClick={item.link}
-                className={`xl:text-xl text-base 
-                ${
-                  index != 0 && index != 3 && "cursor-pointer hover:underline"
-                }`}
-              >
-                {item.title}
-              </span>
-            </div>
-          ))}
-
-          <div className="flex items-center mt-2">
-            <h3 className="text-xl text-gray-300">Social</h3>
-            <div className="bg-gray-400 w-8 h-[2px] mx-4"></div>
-
-            <div className="flex gap-3">
-              {social.map((item, index) => (
-                <a
-                  key={index}
-                  target="blank"
-                  alt={item.name}
-                  href={item.link}
-                  className="text-3xl text-gray-300 hover:text-purple-400 
-                  hover:-translate-y-1.5 shadow-lg duration-300"
-                >
-                  {item.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+    <div id="contact" className="grid lg:grid-cols-2 grid-cols-1">
+      <div className="h-[500px] overflow-hidden">
+        <div className="h-[560px]">
+          <Spline scene="https://prod.spline.design/X1HWOK5-C9qAhYfl/scene.splinecode" />
         </div>
       </div>
+      <ContactInfo />
     </div>
   );
 };
