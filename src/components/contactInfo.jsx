@@ -37,17 +37,17 @@ export default function ContactInfo() {
 
   const social = [
     {
-      name: "LinkedIn",
+      alt: "linkedIn",
       link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
       icon: <FaLinkedin />,
     },
     {
-      name: "Github",
+      alt: "github",
       link: "https://github.com/zunairaasif",
       icon: <FaGithubSquare />,
     },
     {
-      name: "Upwork",
+      alt: "upwork",
       link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
       icon: <FaSquareUpwork />,
     },
@@ -81,7 +81,7 @@ export default function ContactInfo() {
         ))}
 
         <div className="flex items-center mt-2">
-          <h3 className="text-xl text-gray-300">Social</h3>
+          <span className="text-xl text-gray-300">Social</span>
           <div className="bg-gray-400 w-8 h-[2px] mx-4"></div>
 
           <div className="flex gap-3">
@@ -89,10 +89,10 @@ export default function ContactInfo() {
               <a
                 key={index}
                 target="blank"
-                alt={item.name}
+                alt={item.alt}
                 href={item.link}
                 className="text-3xl text-gray-300 hover:text-purple-400 
-                  hover:-translate-y-1.5 shadow-lg duration-300"
+                hover:-translate-y-1.5 shadow-lg duration-300"
               >
                 {item.icon}
               </a>
