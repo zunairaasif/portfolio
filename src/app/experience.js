@@ -72,27 +72,26 @@ const Experience = () => {
             </div>
             <span className="xl:text-base text-xs mt-2">Jan 2024 - Now</span>
           </div>
-          <div className="flex flex-col xl:text-base text-sm tracking-wide leading-5 font-extralight gap-2">
+          <div className="flex flex-col xl:text-base text-xs tracking-wide leading-5 font-extralight gap-2">
             <span>
               In my freelance journey, along with expertise in frontend, I have
-              gained foundational knowledge of <b>backend development</b> using
-              Node.js and Express.js, and have hands-on building simple APIs and
-              handling basic server-side logic.{" "}
+              gained foundational knowledge of <b>backend development</b> with
+              Node.js and Express.js, building simple APIs and handling basic
+              server-side logic.{" "}
             </span>
             <span>
               Through this time, I’ve successfully collaborated with multiple
-              clients, consistently meeting <b>tight deadlines</b> while
-              ensuring <b>100% client satisfaction</b> — many of whom have
-              become <b>long-term partners</b>. I deepened my expertise in
-              frontend development by translating complex <b>Figma designs</b>{" "}
-              into pixel-perfect, fully <b>responsive</b> interfaces with the
-              help of multiple UI libraries and packages. I also gained hands-on
+              clients, consistently meeting <b>tight deadlines</b> with{" "}
+              <b>100% client satisfaction</b> — turning many into{" "}
+              <b>long-term partners</b>. I deepened my expertise in frontend
+              development by translating complex <b>Figma designs</b> into
+              pixel-perfect, fully <b>responsive</b> interfaces with the help of
+              multiple UI libraries and packages. I also gained hands-on
               experience with <b>Shopify</b> customization.
             </span>
             <span>
-              Additionally, I worked how to integrate secure payment solutions
-              using <b>Stripe</b>, and worked with <b>AWS S3 buckets</b> for
-              file storage. I tackled and integrated{" "}
+              Additionally, I have integrated <b>Stripe</b> for secure payments,
+              worked with <b>AWS S3 bucket</b> integrations and worked with{" "}
               <b>complex third-party APIs</b>, which strengthened my
               problem-solving and debugging <b>abilities</b> in real-world
               projects. This phase significantly <b>enhanced</b> my
@@ -120,7 +119,7 @@ const Experience = () => {
             </div>
             <span className="xl:text-sm text-xs mt-2">Oct 2022 - Dec 2023</span>
           </div>
-          <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
+          <span className="xl:text-base text-xs tracking-wide leading-5 font-extralight">
             Implemented industry best practices for code quality and
             maintainability. Worked extensively with <b>3D</b> frameworks and
             libraries. Actively participated in{" "}
@@ -149,7 +148,7 @@ const Experience = () => {
               July 2022 - Sep 2022
             </span>
           </div>
-          <span className="xl:text-base text-sm tracking-wide leading-5 font-extralight">
+          <span className="xl:text-base text-xs tracking-wide leading-5 font-extralight">
             Learned to develop <b>responsive and user-friendly</b> websites and
             web applications. Collaborated closely with designers and product
             managers in agile environments. Integrated <b>RESTful APIs</b> to
