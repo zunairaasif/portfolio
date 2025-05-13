@@ -13,16 +13,16 @@ export default function ContactInfo() {
   const contact = [
     {
       title: "Zunaira Asif",
-      icon: <FaUserAlt className="size-4 text-purple-400" />,
+      icon: <FaUserAlt className="xl:size-5 size-4 text-purple-400" />,
     },
     {
       title: "+92 303 4774200",
-      icon: <FaPhoneAlt className="size-4 text-purple-400" />,
+      icon: <FaPhoneAlt className="xl:size-5 size-4 text-purple-400" />,
       link: () => window.open("https://wa.me/923034774200", "_blank"),
     },
     {
       title: "zunairaa.dev@gmail.com",
-      icon: <MdEmail className="text-purple-400" />,
+      icon: <MdEmail className="xl:size-6 text-purple-400" />,
       link: () =>
         window.open(
           "https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com",
@@ -31,22 +31,22 @@ export default function ContactInfo() {
     },
     {
       title: "Sahiwal, Pakistan",
-      icon: <FaLocationDot className="text-purple-400" />,
+      icon: <FaLocationDot className="xl:size-6 text-purple-400" />,
     },
   ];
 
   const social = [
     {
       link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
-      icon: <FaLinkedin />,
+      icon: <FaLinkedin className="xl:size-9" />,
     },
     {
       link: "https://github.com/zunairaasif",
-      icon: <FaGithubSquare />,
+      icon: <FaGithubSquare className="xl:size-9" />,
     },
     {
       link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
-      icon: <FaSquareUpwork />,
+      icon: <FaSquareUpwork className="xl:size-9" />,
     },
   ];
 
@@ -78,10 +78,10 @@ export default function ContactInfo() {
         ))}
 
         <div className="flex items-center mt-2">
-          <span className="text-xl text-gray-300">Social</span>
+          <span className="xl:text-2xl text-xl text-gray-300">Social</span>
           <div className="bg-gray-400 w-8 h-[2px] mx-4"></div>
 
-          <div className="flex gap-3">
+          <div className="flex xl:gap-4 gap-3">
             {social.map((item, index) => (
               <a
                 key={index}
