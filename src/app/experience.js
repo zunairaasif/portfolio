@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useRef } from "react";
+
 import "@styles/experience.css";
+import { LinkPreview } from "@components/ui/link-preview";
 
 const Experience = () => {
   const timelineRef = useRef(null);
@@ -109,13 +111,15 @@ const Experience = () => {
               <span className="xl:text-3xl text-2xl">
                 React.js/Next.js Developer
               </span>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/alt-code-labs/"
-                className="text-purple-400 hover:text-purple-300 xl:text-lg text-base"
+
+              <LinkPreview
+                className="w-fit"
+                url="https://www.linkedin.com/company/alt-code-labs/"
               >
-                Altcode Labs
-              </a>
+                <span className="text-purple-400 xl:text-lg text-base">
+                  Altcode Labs
+                </span>
+              </LinkPreview>
             </div>
             <span className="xl:text-sm text-xs mt-2">Oct 2022 - Dec 2023</span>
           </div>
@@ -136,13 +140,14 @@ const Experience = () => {
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
               <span className="xl:text-3xl text-2xl">React.js Intern</span>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/global-software-consulting/"
-                className="text-purple-400 hover:text-purple-300 xl:text-lg text-base"
+              <LinkPreview
+                className="w-fit"
+                url="https://www.linkedin.com/company/global-software-consulting/"
               >
-                Global Software Consulting
-              </a>
+                <span className="text-purple-400 xl:text-lg text-base">
+                  Global Software Consulting
+                </span>
+              </LinkPreview>
             </div>
             <span className="xl:text-sm text-xs mt-2">
               July 2022 - Sep 2022

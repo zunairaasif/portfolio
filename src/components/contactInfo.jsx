@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import React from "react";
 import { MdEmail } from "react-icons/md";
+import { LinkPreview } from "./ui/link-preview";
 import { FaSquareUpwork, FaLocationDot } from "react-icons/fa6";
 
 export default function ContactInfo() {
@@ -37,7 +38,7 @@ export default function ContactInfo() {
 
   const social = [
     {
-      link: "https://www.linkedin.com/in/zunaira-a-46b072216/",
+      link: "https://www.linkedin.com/in/zunaira-asif-9864i/",
       icon: <FaLinkedin className="xl:size-9" />,
     },
     {
@@ -45,7 +46,7 @@ export default function ContactInfo() {
       icon: <FaGithubSquare className="xl:size-9" />,
     },
     {
-      link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98",
+      link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98?mp_source=share",
       icon: <FaSquareUpwork className="xl:size-9" />,
     },
   ];
@@ -83,16 +84,14 @@ export default function ContactInfo() {
 
           <div className="flex xl:gap-4 gap-3">
             {social.map((item, index) => (
-              <a
+              <LinkPreview
                 key={index}
-                target="blank"
-                href={item.link}
-                aria-label={index}
+                url={item.link}
                 className="text-3xl text-gray-300 hover:text-purple-400 
-                hover:-translate-y-1.5 shadow-lg duration-300"
+                hover:-translate-y-1.5 shadow-lg duration-300 w-fit"
               >
                 {item.icon}
-              </a>
+              </LinkPreview>
             ))}
           </div>
         </div>
