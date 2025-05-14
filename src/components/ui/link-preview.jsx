@@ -15,7 +15,7 @@ import { cn } from "@app/lib/utils";
 export const LinkPreview = ({
   children,
   url,
-  key,
+  keyValue,
   className,
   width = 200,
   height = 125,
@@ -107,7 +107,7 @@ export const LinkPreview = ({
                 style={{ x: translateX }}
               >
                 <a
-                  key={key}
+                  key={keyValue}
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"

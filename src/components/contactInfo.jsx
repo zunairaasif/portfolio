@@ -85,8 +85,8 @@ export default function ContactInfo() {
           <div className="flex xl:gap-4 gap-3">
             {social.map((item, index) => (
               <LinkPreview
-                key={index}
                 url={item.link}
+                key={index}
                 className="text-3xl text-gray-300 hover:text-purple-400 
                 hover:-translate-y-1.5 shadow-lg duration-300 w-fit"
               >

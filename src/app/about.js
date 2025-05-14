@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col md:py-10 py-20 lg:px-40 md:px-20 px-5 gap-10"
+      className="flex flex-col md:py-10 py-20 lg:px-36 md:px-20 px-5 gap-10"
     >
       <div
         className="flex lg:flex-row flex-col lg:justify-between
@@ -35,7 +35,7 @@ const About = () => {
           <CardBody
             className="bg-gray-50 relative group/card dark:hover:shadow-2xl border xl:text-base text-sm
             dark:hover:shadow-purple-500/[0.1] dark:bg-transparent dark:border-white/[0.2] 
-            border-black/[0.1] w-full h-auto rounded-xl md:p-6 p-4 dark:hover:border-purple-900"
+            border-black/[0.1] w-full h-auto rounded-xl md:p-6 p-4 dark:hover:border-purple-300"
           >
             <span>
               I don’t just build UIs — I build trust. I specialize in crafting

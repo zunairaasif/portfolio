@@ -58,7 +58,7 @@ const Experience = () => {
         <br /> experience
       </h2>
 
-      <div className="relative h-auto lg:mx-40 md:mx-20 mx-7" ref={timelineRef}>
+      <div className="relative h-auto lg:mx-36 md:mx-20 mx-7" ref={timelineRef}>
         <div className="career-timeline">
           <div className="career-line" ref={lineRef}></div>
           <div className="career-dot" ref={dotRef}></div>
