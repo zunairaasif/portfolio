@@ -77,7 +77,7 @@ const Links = () => {
           <a
             alt="LinkedIn"
             target="_blank"
-            href="https://www.linkedin.com/in/zunaira-a-46b072216/"
+            href="https://www.linkedin.com/in/zunaira-asif-9864i/"
           >
             <FaLinkedinIn />
           </a>
