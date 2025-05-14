@@ -5,8 +5,8 @@ const Footer = () => {
 
   return (
     <div
-      className="flex items-center justify-between md:mx-10 mx-5 py-5  
-      border-t border-zinc-900 md:text-sm text-xs text-zinc-400"
+      className="flex md:flex-row flex-col items-center md:gap-0 gap-1 justify-between md:mx-10 mx-5 
+      border-t border-zinc-900 md:text-sm text-xs text-zinc-400 md:py-5 py-3"
     >
       <span>&copy; {year.getFullYear()} All Rights Reserved</span>
       <span className="text-end">

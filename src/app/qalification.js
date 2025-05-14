@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { SparklesCore } from "@components/ui/sparkles";
 import { HoverEffect } from "@components/ui/card-hover-effect";
 
 const Qalification = () => {
@@ -20,29 +19,16 @@ const Qalification = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center pt-20">
+    <div className="flex flex-col items-center justify-center mt-26 mb-10">
       <div className="w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
         <h1 className="md:text-7xl text-4xl xl:text-8xl font-bold text-center text-white relative z-20">
           My <span className="text-purple-400">Qualification</span>
         </h1>
-        <div className="w-[40rem] lg:h-40 h-32 relative">
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
-          <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
-          <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
-          <div className="lg:flex hidden">
-            <SparklesCore
-              background="transparent"
-              minSize={0.4}
-              maxSize={1}
-              particleDensity={1200}
-              className="w-full h-full"
-              particleColor="#FFFFFF"
-            />
-
-            <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
-          </div>
+        <div className="md:w-[45rem] w-[25rem] md:h-20 h-14 relative">
+          <div className="absolute md:inset-x-25 inset-x-14 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[5px] w-3/4 blur-sm" />
+          <div className="absolute md:inset-x-25 inset-x-14 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+          <div className="absolute md:inset-x-65 inset-x-38 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute md:inset-x-65 inset-x-38 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
         </div>
       </div>
 
