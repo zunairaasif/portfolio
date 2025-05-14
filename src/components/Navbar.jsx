@@ -42,7 +42,10 @@ const Navbar = () => {
         -mb-[100px] box-border fixed left-1/2 -translate-x-1/2 top-0 z-[9999] 
         transition-all duration-300 ease-in-out py-7 xl:py-9 md:px-8 px-2"
       >
-        <span className="font-display font-semibold tracking-wider xl:text-2xl md:text-xl text-base">
+        <span
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="font-display font-semibold tracking-wider xl:text-2xl md:text-xl text-base"
+        >
           Zunaira Asif
         </span>
 
