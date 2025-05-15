@@ -98,7 +98,10 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:gap-0 gap-10 pt-10 pb-0 lg:ml-36 md:ml-20 ml-5">
+    <div
+      id="projects"
+      className="flex flex-col lg:gap-0 gap-10 pt-10 pb-0 lg:ml-36 md:ml-20 ml-5"
+    >
       <div className="text-6xl font-medium flex items-center gap-5">
         <span>My</span>
         <h2 className="bg-gradient-to-t from-[#7f40ff] to-white bg-clip-text text-transparent">
