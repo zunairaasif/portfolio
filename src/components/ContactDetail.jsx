@@ -10,7 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { LinkPreview } from "./ui/link-preview";
 import { FaSquareUpwork, FaLocationDot } from "react-icons/fa6";
 
-export default function ContactInfo() {
+export default function ContactDetail() {
   const contact = [
     {
       title: "Zunaira Asif",

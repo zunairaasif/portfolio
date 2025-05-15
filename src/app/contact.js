@@ -1,4 +1,4 @@
-import ContactInfo from "@components/ContactInfo";
+import ContactDetail from "@components/ContactDetail";
 import Spline from "@splinetool/react-spline/next";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
           <Spline scene="https://prod.spline.design/X1HWOK5-C9qAhYfl/scene.splinecode" />
         </div>
       </div>
-      <ContactInfo />
+      <ContactDetail />
     </div>
   );
 };
