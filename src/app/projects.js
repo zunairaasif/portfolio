@@ -13,49 +13,50 @@ const Projects = () => {
       name: "FILÁTO Studio",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
-      img: "/images/filato/1.jpg",
+      img: "/images/filato-studio/1.png",
+      url: "https://www.filato.co/",
     },
     {
       name: "FILÁTO Tailoring",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
-      img: "/images/filato/1.jpg",
+      img: "/images/filato-tailoring/1.png",
+      url: "",
     },
     {
       name: "Grazle",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
-      img: "/images/filato/1.jpg",
+      img: "/images/grazle/1.png",
+      url: "https://grazle.co.in/?store=grazle",
     },
     {
       name: "Habit Coin",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
-      img: "/images/filato/1.jpg",
+      img: "/images/habit-coin/1.png",
+      url: "",
     },
     {
       name: "mlpbarmory",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
       img: "/images/mlpb/1.png",
+      url: "https://mlpbarmory.com/",
     },
     {
       name: "Finarch",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
       img: "/images/finarch/1.png",
+      url: "https://www.finarch.co/",
     },
     {
       name: "AltCode Labs",
       type: "e-commerce",
       desc: "Javascript, TypeScript, React, Threejs",
       img: "/images/altcode/1.png",
-    },
-    {
-      name: "Fitcy Health",
-      type: "e-commerce",
-      desc: "Javascript, TypeScript, React, Threejs",
-      img: "/images/filato/1.jpg",
+      url: "https://www.altcodelabs.com/",
     },
   ];
 
@@ -151,14 +152,19 @@ const Projects = () => {
                     src={item.img}
                     className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px]"
                   />
-                  <div
-                    className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full 
-                    bg-gray-800 flex items-center justify-center text-[25px] opacity-0 
-                    shadow-[0_0_10px_rgba(255,255,255,0.5),inset_0_0_10px_#393939] 
-                    group-hover:opacity-100 transition-opacity duration-300"
-                  >
-                    <span>↗</span>
-                  </div>
+                  {item.url && (
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full 
+                      bg-gray-800 flex items-center justify-center text-[25px] opacity-0 
+                      shadow-[0_0_10px_rgba(255,255,255,0.5),inset_0_0_10px_#393939] 
+                      group-hover:opacity-100 transition-opacity duration-300"
+                    >
+                      <span>↗</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
