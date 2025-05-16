@@ -32,7 +32,7 @@ const Page = () => {
                 <Skills />
                 <Projects />
                 <Qalification />
-                {/* <Contact /> */}
+                <Contact />
                 <Footer />
               </div>
             </div>
