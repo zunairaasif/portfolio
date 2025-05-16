@@ -10,8 +10,6 @@ const Projects = () => {
   const [viewportWidth, setViewportWidth] = useState(0);
   const [viewportHeight, setViewportHeight] = useState(0);
 
-  const [isLargeScreen, setIsLargeScreen] = useState(false);
-
   const projectDetails = [
     {
       name: "FILÁTO Studio",
