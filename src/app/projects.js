@@ -179,7 +179,7 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* <Carousel
+      <Carousel
         className="lg:hidden block"
         showStatus={false}
         showThumbs={false}
@@ -232,7 +232,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </Carousel> */}
+      </Carousel>
     </div>
   );
 };
