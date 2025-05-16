@@ -31,10 +31,10 @@ const Skills = () => {
       <div className="w-full grid md:grid-cols-2 grid-cols-1 lg:gap-y-10 gap-y-5 lg:gap-x-10 md:gap-x-5 gap-x-0">
         <div
           className="rounded-[22px] bg-gradient-to-b to-neutral-100 dark:from-neutral-950 
-          dark:to-neutral-800 h-full flex flex-col gap-10 p-7 bg-white dark:bg-zinc-900"
+          dark:to-neutral-800 h-full flex flex-col lg:gap-10 gap-6 lg:p-10 p-7 bg-white dark:bg-zinc-900"
         >
           <h2
-            className="text-xl bg-gradient-to-b from-purple-200 
+            className="lg:text-xl text-lg bg-gradient-to-b from-purple-200 
             to-purple-500 bg-clip-text text-transparent"
           >
             Libraries & Frameworks
@@ -42,26 +42,26 @@ const Skills = () => {
 
           <div className="grid grid-cols-3 items-center text-center justify-center">
             <div className="flex flex-col gap-3 items-center font-light">
-              <FaReact className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>React.js</span>
+              <FaReact className="lg:size-8 size-7 hover:-translate-y-1.5 duration-300" />
+              <span className="lg:text-base text-sm">React.js</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <RiNextjsFill className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>Next.js</span>
+              <span className="lg:text-base text-sm">Next.js</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <RiTailwindCssFill className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>Tailwind CSS</span>
+              <span className="lg:text-base text-sm">Tailwind CSS</span>
             </div>
           </div>
         </div>
 
         <div
           className="rounded-[22px] bg-gradient-to-b to-neutral-100 dark:from-neutral-950 
-          dark:to-neutral-800 h-full flex flex-col gap-10 p-7 bg-white dark:bg-zinc-900"
+          dark:to-neutral-800 h-full flex flex-col lg:gap-10 gap-6 lg:p-10 p-7 bg-white dark:bg-zinc-900"
         >
           <h2
-            className="text-xl bg-gradient-to-b from-purple-200 
+            className="lg:text-xl text-lg bg-gradient-to-b from-purple-200 
             to-purple-500 bg-clip-text text-transparent"
           >
             Tools & Platforms
@@ -69,57 +69,57 @@ const Skills = () => {
 
           <div className="grid grid-cols-3 items-center text-center justify-center">
             <div className="flex flex-col gap-3 items-center font-light">
-              <FaShopify className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>Shopify</span>
+              <FaShopify className="lg:size-8 size-7 hover:-translate-y-1.5 duration-300" />
+              <span className="lg:text-base text-sm">Shopify</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <FaGithub className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>GitHub</span>
+              <span className="lg:text-base text-sm">GitHub</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <FaFigma className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>Figma</span>
+              <span className="lg:text-base text-sm">Figma</span>
             </div>
           </div>
         </div>
 
         <div
           className="rounded-[22px] bg-gradient-to-b to-neutral-100 dark:from-neutral-950 
-          dark:to-neutral-800 h-full flex flex-col gap-10 p-10 bg-white dark:bg-zinc-900"
+          dark:to-neutral-800 h-full flex flex-col lg:gap-10 gap-6 lg:p-10 p-7 bg-white dark:bg-zinc-900"
         >
           <h2
-            className="text-xl bg-gradient-to-b from-purple-200 
+            className="lg:text-xl text-lg bg-gradient-to-b from-purple-200 
             to-purple-500 bg-clip-text text-transparent"
           >
             Languages & Markup
           </h2>
 
-          <div className="grid md:grid-cols-4 grid-cols-3 items-center text-center justify-center">
+          <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-y-0 gap-y-4 items-center text-center justify-center">
             <div className="flex flex-col gap-3 items-center font-light">
-              <FaHtml5 className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>HTML</span>
+              <FaHtml5 className="lg:size-8 size-7 hover:-translate-y-1.5 duration-300" />
+              <span className="lg:text-base text-sm">HTML</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <FaCss3Alt className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>CSS</span>
+              <span className="lg:text-base text-sm">CSS</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <RiJavascriptFill className="xl:size-9 size-8 hover:-translate-y-1.5 duration-300" />
-              <span>JavaScript</span>
+              <span className="lg:text-base text-sm">JavaScript</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <BiLogoTypescript className="xl:size-9 size-8 hover:-translate-y-1.5 duration-300" />
-              <span>TypeScript</span>
+              <span className="lg:text-base text-sm">TypeScript</span>
             </div>
           </div>
         </div>
 
         <div
           className="rounded-[22px] bg-gradient-to-b to-neutral-100 dark:from-neutral-950 
-          dark:to-neutral-800 h-full flex flex-col gap-10 p-7 bg-white dark:bg-zinc-900"
+          dark:to-neutral-800 h-full flex flex-col lg:gap-10 gap-6 lg:p-10 p-7 bg-white dark:bg-zinc-900"
         >
           <h2
-            className="text-xl bg-gradient-to-b from-purple-200 
+            className="lg:text-xl text-lg bg-gradient-to-b from-purple-200 
             to-purple-500 bg-clip-text text-transparent"
           >
             Backend Development
@@ -127,12 +127,12 @@ const Skills = () => {
 
           <div className="grid grid-cols-2 items-center text-center justify-center">
             <div className="flex flex-col gap-3 items-center font-light">
-              <FaNodeJs className="xl:size-8 size-7 hover:-translate-y-1.5 duration-300" />
-              <span>Node.js</span>
+              <FaNodeJs className="lg:size-8 size-7 hover:-translate-y-1.5 duration-300" />
+              <span className="lg:text-base text-sm">Node.js</span>
             </div>
             <div className="flex flex-col gap-3 items-center font-light">
               <SiExpress className="xl:size-9 size-8 hover:-translate-y-1.5 duration-300" />
-              <span>Express.js</span>
+              <span className="lg:text-base text-sm">Express.js</span>
             </div>
           </div>
         </div>
