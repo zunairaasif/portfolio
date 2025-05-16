@@ -44,12 +44,15 @@ const Navbar = () => {
       >
         <span
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="font-display font-semibold tracking-wider xl:text-2xl md:text-xl text-base"
+          className="font-display font-semibold tracking-wider xl:text-2xl md:text-xl text-lg"
         >
           Zunaira Asif
         </span>
 
-        <div className="flex flex-row items-center items-end md:gap-16 gap-3 xl:text-lg md:text-base text-xs">
+        <div
+          className="flex flex-row items-center items-end md:gap-16 gap-3 
+          xl:text-lg md:text-base text-[10px]"
+        >
           <a
             href="#about"
             data-href="#about"
