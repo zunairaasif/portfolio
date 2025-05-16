@@ -1,5 +1,7 @@
 "use client";
+import { Carousel } from "react-responsive-carousel";
 import React, { useRef, useEffect, useState } from "react";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Projects = () => {
   const sliderRef = useRef(null);
@@ -7,6 +9,8 @@ const Projects = () => {
   const [sliderWidth, setSliderWidth] = useState(0);
   const [viewportWidth, setViewportWidth] = useState(0);
   const [viewportHeight, setViewportHeight] = useState(0);
+
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const projectDetails = [
     {
@@ -100,9 +104,9 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col lg:gap-0 gap-10 pt-10 pb-0 lg:ml-36 md:ml-20 ml-5"
+      className="flex flex-col pt-10 pb-0 lg:ml-36 lg:mr-0 md:ml-10 md:mr-10 ml-5 mr-5"
     >
-      <div className="text-6xl font-medium flex items-center gap-5">
+      <div className="md:text-6xl text-5xl font-medium flex items-center md:gap-5 gap-3">
         <span>My</span>
         <h2 className="bg-gradient-to-t from-[#7f40ff] to-white bg-clip-text text-transparent">
           Projects
@@ -111,7 +115,7 @@ const Projects = () => {
 
       <section
         ref={containerRef}
-        className="relative w-full"
+        className="lg:block hidden relative w-full"
         style={{
           height:
             viewportWidth >= 1024
@@ -122,15 +126,15 @@ const Projects = () => {
         <div
           ref={sliderRef}
           className={`${viewportWidth >= 1024 ? "sticky top-0 h-screen" : ""} 
-          flex w-max items-center transition-transform duration-200 ease-out 
-          pr-[10vw] flex-wrap gap-y-10`}
+            flex w-max items-center transition-transform duration-200 ease-out 
+            pr-[10vw] flex-wrap gap-y-10`}
         >
           {projectDetails.map((item, index) => (
             <div
               key={index}
               className={`h-[80vh] flex w-[350px] flex-shrink-0 flex-col justify-start gap-5 border-r
-              border-[#363636] px-8 py-10 md:w-[450px] md:px-12 md:py-12 lg:w-[500px] 
-              border-y ${index % 2 === 1 ? "flex-col-reverse" : ""}`}
+                border-[#363636] px-8 py-10 md:w-[450px] md:px-12 md:py-12 lg:w-[500px] 
+                border-y ${index % 2 === 1 ? "flex-col-reverse" : ""}`}
             >
               <div className="flex w-full justify-between mb-4">
                 <h3 className="text-5xl font-bold">0{index + 1}</h3>
@@ -142,17 +146,19 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="flex flex-col">
                 <h4 className="xl:text-lg text-base">Tools and features</h4>
                 <p className="xl:text-base text-sm font-light text-zinc-400 mt-1">
                   {item.desc}
                 </p>
               </div>
+
               <div className="flex w-full justify-center">
                 <div className="relative group">
                   <img
-                    alt={item.name}
+                    loading="lazy"
                     src={item.img}
+                    alt={item.name}
                     className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px]"
                   />
                   {item.url && (
@@ -161,9 +167,9 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full 
-                      bg-gray-800 flex items-center justify-center text-[25px] opacity-0 
-                      shadow-[0_0_10px_rgba(255,255,255,0.5),inset_0_0_10px_#393939] 
-                      group-hover:opacity-100 transition-opacity duration-300"
+                        bg-gray-800 flex items-center justify-center text-[25px] opacity-0 
+                        shadow-[0_0_10px_rgba(255,255,255,0.5),inset_0_0_10px_#393939] 
+                        group-hover:opacity-100 transition-opacity duration-300"
                     >
                       <span>↗</span>
                     </a>
@@ -174,6 +180,61 @@ const Projects = () => {
           ))}
         </div>
       </section>
+
+      <Carousel
+        className="lg:hidden block"
+        showStatus={false}
+        showThumbs={false}
+        showArrows={false}
+      >
+        {projectDetails.map((item, index) => (
+          <div
+            key={index}
+            className="my-10 p-5 flex flex-col border border-[#363636] rounded-xl"
+          >
+            <div className="flex w-full justify-between mb-4">
+              <h3 className="md:text-5xl text-4xl font-bold">0{index + 1}</h3>
+              <div className="text-right">
+                <h4 className="text-lg">{item.name}</h4>
+                <p className="text-sm font-light text-zinc-400 mt-1">
+                  {item.type}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col text-start md:mb-10 mb-5">
+              <h4 className="md:text-lg text-base">Tools and features</h4>
+              <p className="md:text-base text-sm font-light text-zinc-400 mt-1">
+                {item.desc}
+              </p>
+            </div>
+
+            <div className="flex w-full justify-center">
+              <div className="relative group">
+                <img
+                  loading="lazy"
+                  src={item.img}
+                  alt={item.name}
+                  className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px]"
+                />
+                {item.url && (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full 
+                        bg-gray-800 flex items-center justify-center text-[25px] opacity-0 
+                        shadow-[0_0_10px_rgba(255,255,255,0.5),inset_0_0_10px_#393939] 
+                        group-hover:opacity-100 transition-opacity duration-300"
+                  >
+                    <span>↗</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };
