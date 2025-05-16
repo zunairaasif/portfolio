@@ -102,7 +102,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="flex flex-col pt-10 pb-0 lg:ml-36 lg:mr-0 md:ml-10 md:mr-10 ml-5 mr-5"
+      className="flex flex-col pt-10 pb-0 lg:ml-40 lg:mr-0 md:ml-10 md:mr-10 ml-5 mr-5"
     >
       <div className="md:text-6xl text-5xl font-medium flex items-center md:gap-5 gap-3">
         <span>My</span>

@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex flex-col md:py-10 py-20 lg:px-36 md:px-20 px-5 gap-10"
+      className="flex flex-col md:py-10 py-20 lg:px-40 md:px-20 px-5 gap-10"
     >
       <div
         className="flex lg:flex-row flex-col lg:justify-between

@@ -58,7 +58,7 @@ const Experience = () => {
         <br /> experience
       </h2>
 
-      <div className="relative h-auto lg:mx-36 md:mx-20 mx-7" ref={timelineRef}>
+      <div className="relative h-auto lg:mx-40 md:mx-20 mx-7" ref={timelineRef}>
         <div className="career-timeline">
           <div className="career-line" ref={lineRef}></div>
           <div className="career-dot" ref={dotRef}></div>
@@ -78,8 +78,8 @@ const Experience = () => {
             <span>
               In my freelance journey, along with expertise in frontend, I have
               gained foundational knowledge of <b>backend development</b> with
-              Node.js and Express.js, building simple APIs and handling basic
-              server-side logic.{" "}
+              <b>Node.js</b> and <b>Express.js</b>, building simple APIs and
+              handling basic server-side logic.{" "}
             </span>
             <span>
               Through this time, I’ve successfully collaborated with multiple
@@ -92,11 +92,10 @@ const Experience = () => {
               experience with <b>Shopify</b> customization.
             </span>
             <span>
-              Additionally, I have integrated <b>Stripe</b> for secure payments,
-              worked with <b>AWS S3 bucket</b> integrations and worked with{" "}
-              <b>complex third-party APIs</b>, which strengthened my
-              problem-solving and debugging <b>abilities</b> in real-world
-              projects. This phase significantly <b>enhanced</b> my
+              Additionally, I have experience of integrating <b>Stripe</b>,{" "}
+              <b>AWS S3 bucket</b> and <b>complex third-party APIs</b>, which
+              strengthened my problem-solving and debugging <b>abilities</b> in
+              real-world projects. This phase significantly <b>enhanced</b> my
               adaptability, communication skills and ability to deliver
               high-quality solutions under pressure. Still I'm keeping myself{" "}
               <b>up to date</b> with the latest industry trends and

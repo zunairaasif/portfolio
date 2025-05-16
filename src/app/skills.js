@@ -22,7 +22,7 @@ const Skills = () => {
   return (
     <BackgroundBeamsWithCollision
       className="flex flex-col items-center justify-center gap-16 
-      lg:px-36 md:px-20 px-5 md:py-20 py-10"
+      lg:px-40 md:px-20 px-5 md:py-20 py-10"
     >
       <h1 className="uppercase xl:text-7xl text-6xl font-bold tracking-widest md:ml-0 ml-4">
         Tech <span className="md:ml-0 ml-10">Stack</span>
