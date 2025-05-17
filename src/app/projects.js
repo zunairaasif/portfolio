@@ -393,7 +393,7 @@ const projectDetails = [
     type: "Next.js",
     url: "https://grazle.co.in/?store=grazle",
     tools: ["Next.js", "TypeScript", "MUI", "Redux", "Figma"],
-    desc: "Spearheaded UI improvements and responsiveness fixes, ensuring a seamless and visually consistent experience across all devices. Identified and resolved front-end issues to match the excat figma design, optimizing performance and enhancing user interaction. Advocated for and implemented clean code practices to improve code readability and maintainability, ensuring smoother collaboration across the development team. Conducted comprehensive audit of all required API integrations, identifying missing connections. Implemented necessary API integrations to complete system functionality.",
+    desc: "Spearheaded UI improvements and responsiveness fixes, ensuring a seamless and visually consistent experience across all devices. Identified and resolved front-end issues to match the exact figma design, optimizing performance and enhancing user interaction. Advocated for and implemented clean code practices to improve code readability and maintainability, ensuring smoother collaboration across the development team. Conducted comprehensive audit of all required API integrations, identifying missing connections. Implemented necessary API integrations to complete system functionality.",
     img: [
       "/images/grazle/1.png",
       "/images/grazle/2.png",
