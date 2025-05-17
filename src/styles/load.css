@@ -357,3 +357,29 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .loading-marquee {
+    font-size: 30px;
+  }
+
+  .loading-button {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+
+  .loading-container {
+    left: 30px;
+  }
+
+  .loading-content2 {
+    font-size: 12px;
+    width: 100px;
+    max-width: 100px;
+  }
+
+  .loading-wrap {
+    --Lsize: 100px;
+    padding: 4px;
+  }
+}
