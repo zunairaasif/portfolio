@@ -345,7 +345,7 @@ const Projects = () => {
 
 const projectDetails = [
   {
-    name: "FILÁTO Studio",
+    name: "FILÀTO Studio",
     type: "Shopify",
     url: "https://www.filato.co/",
     tools: ["Shopify"],
@@ -360,7 +360,7 @@ const projectDetails = [
     ],
   },
   {
-    name: "FILÁTO Tailoring",
+    name: "FILÀTO Tailoring",
     type: "Next.js",
     url: "",
     tools: [
