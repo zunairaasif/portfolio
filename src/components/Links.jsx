@@ -73,6 +73,7 @@ const Links = () => {
             alt="Github"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="GitHub Profile"
             href="https://github.com/zunairaasif"
           >
             <FaGithub />
@@ -83,6 +84,7 @@ const Links = () => {
             alt="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
             href="https://www.linkedin.com/in/zunaira-asif-9864i/"
           >
             <FaLinkedinIn />
@@ -93,6 +95,7 @@ const Links = () => {
             alt="Email"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Email"
             href="https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com"
           >
             <MdOutlineMail />
@@ -103,6 +106,7 @@ const Links = () => {
             alt="Upwork"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Upwork Profile"
             href="https://www.upwork.com/freelancers/~018da9dad38cf15c98"
           >
             <FaUpwork />
