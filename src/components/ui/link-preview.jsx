@@ -79,6 +79,7 @@ export const LinkPreview = ({
             href={url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Social Profile"
             onMouseMove={handleMouseMove}
             className={cn("text-black dark:text-white", className)}
           >
@@ -107,12 +108,14 @@ export const LinkPreview = ({
                 style={{ x: translateX }}
               >
                 <a
-                  key={keyValue}
                   href={url}
+                  key={keyValue}
                   target="_blank"
-                  rel="noopener noreferrer"
                   style={{ fontSize: 0 }}
-                  className="block p-1 bg-white border-2 border-transparent shadow rounded-xl hover:border-neutral-200 dark:hover:border-neutral-800"
+                  rel="noopener noreferrer"
+                  aria-label="Social Profile"
+                  className="block p-1 bg-white border-2 border-transparent shadow rounded-xl 
+                  hover:border-neutral-200 dark:hover:border-neutral-800"
                 >
                   <img
                     src={isStatic ? imageSrc : src}
