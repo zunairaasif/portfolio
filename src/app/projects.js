@@ -57,6 +57,21 @@ const Projects = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (selectedProject) {
+      // Disable scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scroll
+      document.body.style.overflow = "";
+    }
+
+    // Clean up when component unmounts
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [selectedProject]);
+
   return (
     <div
       id="projects"
