@@ -349,7 +349,7 @@ const projectDetails = [
     type: "Shopify",
     url: "https://www.filato.co/",
     tools: ["Shopify"],
-    desc: "I customized a Shopify theme to align precisely with the client’s vision, refining both design and functionality. Beyond selling clothing, the site also offers tailored services. Made several code-level adjustments to ensure an optimal user experience and meet specific client requirements.",
+    desc: "I have setup a Shopify store to align precisely with the client’s vision, refining both design and functionality. Beyond selling clothing, the site also offers tailored services. Made several code-level adjustments to ensure an optimal user experience and meet specific client requirements.",
     img: [
       "/images/filato-studio/1.png",
       "/images/filato-studio/2.png",

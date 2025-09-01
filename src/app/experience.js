@@ -67,7 +67,7 @@ const Experience = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 md:ml-12 ml-6">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
-              <span className="xl:text-3xl text-2xl">Frontend Developer</span>
+              <span className="xl:text-3xl text-2xl">Web Developer</span>
               <span className="text-purple-400 xl:text-xl text-base">
                 Freelance
               </span>
@@ -77,7 +77,7 @@ const Experience = () => {
           <div className="flex flex-col xl:text-base text-xs tracking-wide leading-5 font-extralight gap-2">
             <span>
               In my freelance journey, along with expertise in frontend, I have
-              gained foundational knowledge of <b>backend development</b> with
+              gained foundational knowledge of <b>backend development</b> with{" "}
               <b>Node.js</b> and <b>Express.js</b>, building simple APIs and
               handling basic server-side logic.{" "}
             </span>
@@ -89,7 +89,7 @@ const Experience = () => {
               development by translating complex <b>Figma designs</b> into
               pixel-perfect, fully <b>responsive</b> interfaces with the help of
               multiple UI libraries and packages. I also gained hands-on
-              experience with <b>Shopify</b> customization.
+              experience with <b>Shopify store setups</b>.
             </span>
             <span>
               Additionally, I have experience of integrating <b>Stripe</b>,{" "}
