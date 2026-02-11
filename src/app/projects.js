@@ -123,7 +123,10 @@ const Projects = () => {
                   className="flex flex-col gap-1 xl:text-base text-sm font-light 
                   text-zinc-400 mt-1"
                 >
-                  <span className="line-clamp-2">{item.desc}</span>
+                  <p className="line-clamp-2">
+                    {Array.isArray(item.desc) ? item.desc.join(" ") : item.desc}
+                  </p>
+
                   <span
                     onClick={() => openModal(item)}
                     className="w-fit text-indigo-400 font-medium cursor-pointer hover:underline"
@@ -160,73 +163,6 @@ const Projects = () => {
           ))}
         </div>
       </section>
-
-      <Carousel
-        showStatus={false}
-        showThumbs={false}
-        showArrows={false}
-        className="lg:hidden block"
-      >
-        {projectDetails.map((item, index) => (
-          <div
-            key={index}
-            className="my-10 md:p-10 p-5 flex flex-col border border-[#363636] rounded-xl"
-          >
-            <div className="flex w-full justify-between mb-4">
-              <h3 className="md:text-5xl text-4xl font-bold">0{index + 1}</h3>
-              <div className="text-right">
-                <h4 className="text-lg">{item.name}</h4>
-                <p className="text-sm font-light text-zinc-400 mt-1">
-                  {item.type}
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col text-start md:mb-10 mb-5">
-              <h4 className="md:text-lg text-base">Description and Tools</h4>
-              <div
-                className="flex flex-col gap-1 xl:text-base text-sm font-light 
-                text-zinc-400 mt-1"
-              >
-                <span className="line-clamp-2">{item.desc}</span>
-                <span
-                  onClick={() => openModal(item)}
-                  className="w-fit text-indigo-400 font-medium cursor-pointer hover:underline"
-                >
-                  Read more →
-                </span>
-              </div>
-            </div>
-
-            <div className="flex w-full justify-center">
-              {item.url ? (
-                <a
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative group block"
-                >
-                  <img
-                    loading="lazy"
-                    alt={item.name}
-                    src={item.img[0]}
-                    className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px] transition-transform group-hover:scale-105"
-                  />
-                </a>
-              ) : (
-                <div className="relative group">
-                  <img
-                    loading="lazy"
-                    alt={item.name}
-                    src={item.img[0]}
-                    className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px]"
-                  />
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
-      </Carousel>
 
       <AnimatePresence>
         {selectedProject && (
@@ -313,8 +249,15 @@ const Projects = () => {
                     Description
                   </h3>
                   <p className="md:text-sm text-xs text-neutral-300">
-                    {selectedProject.desc}
+                    {selectedProject.desc[0]}
                   </p>
+                  {selectedProject.desc.length > 1 && (
+                    <ul className="list-disc list-outside mt-1 ml-4 md:text-sm text-xs text-neutral-300">
+                      {selectedProject.desc.slice(1).map((point, idx) => (
+                        <li key={idx}>{point}</li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
 
                 <div className="border-t border-neutral-700 pt-4">
@@ -348,8 +291,22 @@ const projectDetails = [
     name: "FILÀTO Studio",
     type: "Shopify",
     url: "https://www.filato.co/",
-    tools: ["Shopify"],
-    desc: "I have setup a Shopify store to align precisely with the client’s vision, refining both design and functionality. Beyond selling clothing, the site also offers tailored services. Made several code-level adjustments to ensure an optimal user experience and meet specific client requirements.",
+    tools: [
+      "Shopify",
+      "Shopify Theme",
+      "Dawn Theme",
+      "Payment Gateway",
+      "Stripe",
+      "SEO Optimization",
+      "Email Marketing",
+      "Theme Customization",
+    ],
+    desc: [
+      "Helped the client bring their vision to life by setting up a Shopify store with a seamless design and functionality using a DAWN theme.",
+      "Added products and collections and integrated payment gateways like Stripe.",
+      "Implemented custom code adjustments to enhance usability and meet the client’s unique requirements.",
+      "Optimized the store for SEO and set up email marketing workflows, improving visibility and engagement.",
+    ],
     img: [
       "/images/filato-studio/1.png",
       "/images/filato-studio/2.png",
@@ -370,12 +327,20 @@ const projectDetails = [
       "Redux",
       "Stripe",
       "AWS S3",
-      "Tailwind",
+      "Tailwind CSS",
       "Framer Motion",
       "Lottie React",
       "React Toastify",
     ],
-    desc: "Built a responsive and user-friendly tailoring service platform using Next.js, ensuring seamless performance with backend integration and an intuitive interface. Contributed to the design process by providing reference designs and offering constructive feedback to align with client expectations. Integrated AWS S3 bucket for secure and efficient handling of user-uploaded reference images. Implemented Stripe for secure and hassle-free payment processing, enhancing user convenience. Managed application state efficiently using Redux. Enhanced UI/UX with animations and transitions using Framer Motion, along with other packages for a modern and engaging experience and proper error handling. Assisted in backend development to ensure smooth functionality and data flow.",
+    desc: [
+      "Built a responsive and user-friendly tailoring service platform using Next.js, ensuring seamless performance with backend integration and an intuitive interface.",
+      "Contributed to the design process by providing reference designs and offering constructive feedback to align with client expectations.",
+      "Integrated AWS S3 bucket for secure and efficient handling of user-uploaded reference images.",
+      "Implemented Stripe for secure and hassle-free payment processing, enhancing user convenience.",
+      "Managed application state efficiently using Redux.",
+      "Enhanced UI/UX with animations and transitions using Framer Motion, along with other packages for a modern and engaging experience and proper error handling.",
+      "Assisted in backend development to ensure smooth functionality and data flow.",
+    ],
     img: [
       "/images/filato-tailoring/1.png",
       "/images/filato-tailoring/2.png",
@@ -393,7 +358,13 @@ const projectDetails = [
     type: "Next.js",
     url: "https://grazle.co.in/?store=grazle",
     tools: ["Next.js", "TypeScript", "MUI", "Redux", "Figma"],
-    desc: "Spearheaded UI improvements and responsiveness fixes, ensuring a seamless and visually consistent experience across all devices. Identified and resolved front-end issues to match the exact figma design, optimizing performance and enhancing user interaction. Advocated for and implemented clean code practices to improve code readability and maintainability, ensuring smoother collaboration across the development team. Conducted comprehensive audit of all required API integrations, identifying missing connections. Implemented necessary API integrations to complete system functionality.",
+    desc: [
+      "Executed UI improvements and responsiveness fixes, ensuring a seamless and visually consistent experience across all devices.",
+      "Identified and resolved front-end issues to match the exact figma design, optimizing performance and enhancing user interaction.",
+      "Advocated for and implemented clean code practices to improve code readability and maintainability, ensuring smoother collaboration across the development team.",
+      "Conducted comprehensive audit of all required API integrations, identifying missing connections.",
+      "Implemented necessary API integrations to complete system functionality.",
+    ],
     img: [
       "/images/grazle/1.png",
       "/images/grazle/2.png",
@@ -405,8 +376,15 @@ const projectDetails = [
     name: "Habit Coin",
     type: "React.js",
     url: "",
-    tools: ["React.js", "JavaScript", "Figma", "Tailwind", "Solana"],
-    desc: "Translated Figma designs into pixel-perfect, responsive UI components with high fidelity. Delivered a fully responsive implementation across all breakpoints while meeting aggressive deadlines and a clean code quality. Ensured design-system consistency across every interactive element and visual component. Optimized frontend performance without compromising design integrity. Executed rapid iterations to align development with design specs under tight timelines.",
+    tools: ["React.js", "JavaScript", "Figma", "Tailwind CSS", "Solana"],
+    desc: [
+      "Translated Figma designs into pixel-perfect, responsive UI components with high fidelity.",
+      "Delivered a fully responsive implementation across all breakpoints.",
+      "Delivered high-quality code while meeting aggressive deadlines.",
+      "Ensured design-system consistency across every interactive element and visual component.",
+      "Optimized frontend performance without compromising design integrity.",
+      "Executed rapid iterations to align development with design specs under tight timelines.",
+    ],
     img: [
       "/images/habit-coin/1.png",
       "/images/habit-coin/2.png",
@@ -424,8 +402,13 @@ const projectDetails = [
     name: "mlpbarmory",
     type: "Next.js",
     url: "https://mlpbarmory.com/",
-    tools: ["Next.js", "TypeScript", "Tailwind"],
-    desc: "I developed the minting portal and designed engaging email templates aimed at capturing user attention. Additionally, I contributed to the project by integrating APIs and resolving UI and responsiveness issues to ensure a seamless user experience across all devices. Resolved critical responsiveness issues, achieving 100% mobile compatibility. Implemented design refinements that increased overall user satisfaction.",
+    tools: ["Next.js", "TypeScript", "Tailwind", "REST API"],
+    desc: [
+      "I developed the minting portal and designed engaging email templates aimed at capturing user attention.",
+      "Contributed to the project by integrating missing APIs.",
+      "Resolved critical responsiveness issues across all devices, achieving 100% mobile compatibility.",
+      "Implemented design refinements that increased overall user satisfaction.",
+    ],
     img: [
       "/images/mlpb/1.png",
       "/images/mlpb/2.png",
@@ -447,7 +430,12 @@ const projectDetails = [
     type: "React.js",
     url: "https://www.finarch.co/",
     tools: ["React.js", "JavaScript", "MUI", "Redux"],
-    desc: "Successfully rebuilt and modernized the entire website using React, ensuring full responsiveness and adherence to industry best practices. Implemented Redux for efficient state management, optimizing performance and scalability. Integrated all backend APIs seamlessly, ensuring smooth data flow and real-time updates. One of the key challenges was revamping the 'Get a Quote' workflow, which I resolved with an intuitive and user-friendly solution, delivering high-quality results.",
+    desc: [
+      "Successfully rebuilt and modernized the entire website using React, ensuring full responsiveness and adherence to industry best practices.",
+      "Implemented Redux for efficient state management, optimizing performance and scalability.",
+      "Integrated all backend APIs seamlessly, ensuring smooth data flow and real-time updates.",
+      "One of the key challenges was revamping the 'Get a Quote' workflow, which I resolved with an intuitive and user-friendly solution, delivering high-quality results.",
+    ],
     img: [
       "/images/finarch/1.png",
       "/images/finarch/2.png",
@@ -468,7 +456,11 @@ const projectDetails = [
       "React Three Fiber",
       "Framer Motion",
     ],
-    desc: "Designed and developed a high-performance web application tailored to the company's specifications. This challenging project allowed me to enhance my expertise in modern UI animations and advanced responsive design, delivering a seamless user experience across all devices with best practices.",
+    desc: [
+      "Designed and developed a high-performance web application tailored to the company's specifications.",
+      "This challenging project allowed me to enhance my expertise in modern UI animations and advanced responsive design.",
+      "Worked with 3D libraries to achieve the company's requirements.",
+    ],
     img: [
       "/images/altcode/1.png",
       "/images/altcode/2.png",
