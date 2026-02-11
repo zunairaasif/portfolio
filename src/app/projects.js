@@ -282,6 +282,76 @@ const Projects = () => {
           </>
         )}
       </AnimatePresence>
+
+      {/* mobile carousel */}
+      <Carousel
+        showStatus={false}
+        showThumbs={false}
+        showArrows={false}
+        className="lg:hidden block"
+      >
+        {projectDetails.map((item, index) => (
+          <div
+            key={index}
+            className="my-10 md:p-10 p-5 flex flex-col border border-[#363636] rounded-xl"
+          >
+            <div className="flex w-full justify-between mb-4">
+              <h3 className="md:text-5xl text-4xl font-bold">0{index + 1}</h3>
+              <div className="text-right">
+                <h4 className="text-lg">{item.name}</h4>
+                <p className="text-sm font-light text-zinc-400 mt-1">
+                  {item.type}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col text-start md:mb-10 mb-5">
+              <h4 className="md:text-lg text-base">Description and Tools</h4>
+              <div
+                className="flex flex-col gap-1 xl:text-base text-sm font-light 
+                text-zinc-400 mt-1"
+              >
+                <p className="line-clamp-2">
+                  {Array.isArray(item.desc) ? item.desc.join(" ") : item.desc}
+                </p>
+                <span
+                  onClick={() => openModal(item)}
+                  className="w-fit text-indigo-400 font-medium cursor-pointer hover:underline"
+                >
+                  Read more →
+                </span>
+              </div>
+            </div>
+
+            <div className="flex w-full justify-center">
+              {item.url ? (
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group block"
+                >
+                  <img
+                    loading="lazy"
+                    alt={item.name}
+                    src={item.img[0]}
+                    className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px] transition-transform group-hover:scale-105"
+                  />
+                </a>
+              ) : (
+                <div className="relative group">
+                  <img
+                    loading="lazy"
+                    alt={item.name}
+                    src={item.img[0]}
+                    className="max-w-full max-h-[150px] md:max-h-[200px] lg:max-h-[250px]"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </Carousel>
     </div>
   );
 };
