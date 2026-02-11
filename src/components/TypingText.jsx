@@ -10,13 +10,11 @@ const TypingText = () => {
       repeat={Infinity}
       className="xl:text-4xl md:text-3xl text-snowWhite text-xl"
       sequence={[
-        "Web Developer",
+        "Full Stack Developer",
         3000,
-        "React.js Developer",
+        "Shopify Expert",
         3000,
-        "Shopify Store Setup Specialist",
-        3000,
-        "Next.js Developer",
+        "React/Next.js Developer",
         3000,
       ]}
     />
