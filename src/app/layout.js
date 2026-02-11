@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <LoadingProvider>
       <Suspense>
-        <html lang="en">
+        <html lang="en" data-arp="">
           <head>
             <link rel="icon" type="image/x-icon" href="/images/zunaira.png" />
 
