@@ -2,7 +2,12 @@
 import { useEffect } from "react";
 import { TbNotes } from "react-icons/tb";
 import { MdOutlineMail } from "react-icons/md";
-import { FaGithub, FaUpwork, FaLinkedinIn } from "react-icons/fa6";
+import {
+  FaGithub,
+  // FaUpwork,
+  FaLinkedinIn,
+} from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
 
 import "@styles/links.css";
 import HoverLinks from "./HoverLinks";
@@ -103,6 +108,16 @@ const Links = () => {
         </span>
         <span>
           <a
+            href="https://wa.me/923034774200"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Call"
+          >
+            <IoMdCall />
+          </a>
+        </span>
+        {/* <span>
+          <a
             alt="Upwork"
             target="_blank"
             rel="noopener noreferrer"
@@ -111,7 +126,7 @@ const Links = () => {
           >
             <FaUpwork />
           </a>
-        </span>
+        </span> */}
       </div>
 
       <button

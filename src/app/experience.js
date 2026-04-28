@@ -67,7 +67,9 @@ const Experience = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 md:ml-12 ml-6">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
-              <span className="xl:text-3xl text-2xl">Full Stack Developer</span>
+              <span className="xl:text-3xl text-2xl">
+                React.js/Next.js Developer
+              </span>
               <span className="text-purple-400 xl:text-xl text-base">
                 Freelance
               </span>
@@ -108,7 +110,9 @@ const Experience = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-20 gap-5 lg:ml-0 ml-6 md:ml-12 my-10">
           <div className="flex md:flex-row flex-col justify-between">
             <div className="flex flex-col">
-              <span className="xl:text-3xl text-2xl">Frontend Developer</span>
+              <span className="xl:text-3xl text-2xl">
+                React.js/Next.js Developer
+              </span>
 
               <LinkPreview
                 className="w-fit"

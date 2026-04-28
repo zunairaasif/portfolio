@@ -8,7 +8,10 @@ import {
 import React from "react";
 import { MdEmail } from "react-icons/md";
 import { LinkPreview } from "./ui/link-preview";
-import { FaSquareUpwork, FaLocationDot } from "react-icons/fa6";
+import {
+  // FaSquareUpwork,
+  FaLocationDot,
+} from "react-icons/fa6";
 
 export default function ContactDetail() {
   const contact = [
@@ -27,7 +30,7 @@ export default function ContactDetail() {
       link: () =>
         window.open(
           "https://mail.google.com/mail/?view=cm&to=zunairaa.dev@gmail.com",
-          "_blank"
+          "_blank",
         ),
     },
     {
@@ -45,10 +48,10 @@ export default function ContactDetail() {
       link: "https://github.com/zunairaasif",
       icon: <FaGithubSquare className="xl:size-9" />,
     },
-    {
-      link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98?mp_source=share",
-      icon: <FaSquareUpwork className="xl:size-9" />,
-    },
+    // {
+    //   link: "https://www.upwork.com/freelancers/~018da9dad38cf15c98?mp_source=share",
+    //   icon: <FaSquareUpwork className="xl:size-9" />,
+    // },
   ];
 
   return (

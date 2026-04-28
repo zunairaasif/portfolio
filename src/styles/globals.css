@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"); */
 
 @theme {
   --breakpoint-sm: 640px;
@@ -15,8 +16,6 @@
     color: #e9e4eb;
   }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
 :root {
   font-family: "Geist", sans-serif;
